@@ -334,15 +334,12 @@
     "faq4 faq4";
     
     align-items: center;
-    grid-gap: 0 0;
 
 }
 .faq-container div{
-    width: 100%;
     padding: 20px 0;
-    flex-wrap: wrap;
-    
 }
+
 .titleFAQ{
     display: grid;
     grid-area: title;
@@ -418,8 +415,8 @@
     display: flex;
     grid-area: faq2;
     flex-direction: row-reverse;
-    height: 100%;
     flex-wrap: wrap;
+    background-color: lightblue;
 }
 .faq2 div{
     width: 50%;
@@ -700,24 +697,35 @@
     .faq2{
         display: flex;
         flex-direction: column;
-        
-        height: auto;
+        align-items: center;
+        width: 100%;background-color: lightblue;
     }
+    .faq2 div{
+        width: 100%
+    };
     .titleQ2{
         height: auto;
     }
+    .question2{
+        margin: 10px 0;
+    }
+    .faq3 div{
+        width: 100%
+    };
     .faq3{
         display: flex;
         flex-direction: column;
-       
-        height: auto;
+        background-color:#c17e8b;
     }
     .faq4{
         display: flex;
       flex-direction: column;
      
     }
-
+    .faq4 div{
+        width: 100%;
+        padding: 10px 0;
+    }
 
 }
 @media only screen and (max-width:1150px){

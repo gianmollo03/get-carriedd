@@ -16,6 +16,7 @@
     padding:20px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }   
 
 #home{
@@ -24,11 +25,13 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: oblique;
     padding: 5px;
-    transition: all 1.5s;
+    border: 0px double rgba(100, 100, 100, 1);
+    border-radius: 4px;
+    transition: box-shadow 300ms ease-in;
 }
 #home:hover {
-    border: solid 1px red;
-}
+    box-shadow: 0px 0px 45px 0px rgba(255, 0, 0, 0.3); }
+  
 .header {
     display: flex;
     width: 20%;
@@ -39,26 +42,26 @@
     justify-content: flex-end;
     width: 80%;
 }
-.links-container{
+
+.links-container {
+  
+    transition: box-shadow 300ms ease-in;
     width: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2px;
-    transition: all 1s;
-}
-.links-container:hover {
-    background-color: #fff;
- }
+  }
+  
+  .links-container:hover {
+    box-shadow: 0px 0px 27px 0px rgba(255, 0, 0, 0.3);
+  }
+  
+  
 .links-container a{
     padding: 5px 0;
     text-decoration: none;
     color: white;
     font-style: italic;
-    transition: all 0.5s;
-}
-.links-container:hover a{
-    color: black;
 }
 
 
@@ -106,7 +109,7 @@
 #nosotros {
     display: flex;
     flex-direction: column;
-    background-color: #d26966;
+    background-image: linear-gradient(#408ec6,#7a2048);
 }
 .title-us {
     display: flex;  
@@ -142,8 +145,8 @@
 #why {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #c17e8b;
+    background-image: linear-gradient(#7a2048,#1e2761);
+    height: 1000px;
 }
 .title-why {
     display: flex;
@@ -153,28 +156,56 @@
     font-size: 1.5em;
     flex-direction: column;
     padding-top: 20px;
+    margin-bottom: 50px;
 }
 
 .why-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.why-explain{
+    display: flex;
+    justify-content: center;
+}
+.why-explain div{
+    width: auto;
+    padding-bottom: 50px;
+}
+.explaination{
+    width: 50%!important;
+    background-color: black 0.5;
+    
+}
+.explaination p{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
+}
+.complot-container{
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 50px;
 }
+.complot-container div{
+    width: 33%;
 
+}
 .complot-why {
-    width: 300px;
     display: flex;
     flex-direction: column;
-    background-color: #a891b1;
+
+    margin-top: 30px;
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
 
 }
-.one-why{
-    background-color: #d26966;
+.complot-why:hover{
+    transform: translate(0px, 0px) scale(1, 1.2);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
 }
-.two-why{
-    background-color: #a891b1;
-}
+
+
 .complot-why img {
     align-self: center;
     border-radius: 150px;
@@ -331,7 +362,9 @@
 
 /*FAQ*/
 
-
+.body-faq-background{
+    background-image: linear-gradient(#7a2048,#1e2761);
+}
 
 
 
@@ -354,7 +387,8 @@
 
 }
 .faq-container div{
-    padding: 20px 0;
+    padding: 50px 0;
+    
 }
 
 .titleFAQ{
@@ -374,9 +408,12 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: lightcoral !important;
     align-items: center;
     flex-wrap: wrap;
+    transition: background-color 300ms ease-out;
+}
+.faq1:hover{
+    background-color: rgba(0, 0, 0, 0.13);
 }
 
 .faq1 div{
@@ -395,23 +432,27 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     grid-area: question1;
+    z-index: -1;
 }
 .mediopago {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap ;
+    z-index: -1;
 }
 .tarjetas {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    z-index: -1;
 }
 .mediopago img {
 
     width: 117px;
     height: auto;
     margin: 20px 0;
+    z-index: -1;
 }
 .mediopago div{
     display: flex;
@@ -419,13 +460,8 @@
     align-items: center;
     padding: 0;
     margin: 0;
+    z-index: -1;
     
-}
-.one {
-    background-color: lightcoral !important;
-}
-.two {
-    background-color: lightblue !important;
 }
 
 .faq2{
@@ -433,7 +469,10 @@
     grid-area: faq2;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    background-color: lightblue;
+
+}
+.faq2:hover{
+    background-color: rgba(0, 0, 0, 0.13);
 }
 .faq2 div{
     width: 50%;
@@ -458,6 +497,9 @@
     height: 100%;
     flex-wrap: wrap;
 }
+.faq3:hover{
+    background-color: rgba(0, 0, 0, 0.13);
+}
 .faq3 div{
     width: 50%;
 }
@@ -479,6 +521,9 @@
     flex-direction: row-reverse;
     height: 100%;
     flex-wrap: wrap;
+}
+.faq4:hover{
+    background-color: rgba(0, 0, 0, 0.13);
 }
 .faq4 div{
     width: 50%;
@@ -689,8 +734,7 @@
         "faq4   ";
     }
     .faq-container div{
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 20px 0;
         justify-content: center;
     }
     .faq1{
@@ -715,7 +759,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;background-color: lightblue;
+        width: 100%;
     }
     .faq2 div{
         width: 100%
@@ -732,7 +776,7 @@
     .faq3{
         display: flex;
         flex-direction: column;
-        background-color:#c17e8b;
+        
     }
     .faq4{
         display: flex;

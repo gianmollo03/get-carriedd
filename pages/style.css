@@ -31,7 +31,11 @@
 }
 #home:hover {
     box-shadow: 0px 0px 45px 0px rgba(255, 0, 0, 0.3); }
-  
+  .home-header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
 .header {
     display: flex;
     width: 20%;
@@ -130,7 +134,8 @@
     width: 30%;
     display: flex;
     flex-direction: column;
-    background-color: #a891b1;
+    justify-content: center;
+    align-items: center;
 }
 
 .complot img{
@@ -140,6 +145,7 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.1em;
     text-align: center;
+
 }
 
 #why {
@@ -411,6 +417,8 @@
     align-items: center;
     flex-wrap: wrap;
     transition: background-color 300ms ease-out;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .faq1:hover{
     background-color: rgba(0, 0, 0, 0.13);
@@ -469,6 +477,8 @@
     grid-area: faq2;
     flex-direction: row-reverse;
     flex-wrap: wrap;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 
 }
 .faq2:hover{
@@ -496,6 +506,8 @@
     flex-direction: row;
     height: 100%;
     flex-wrap: wrap;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .faq3:hover{
     background-color: rgba(0, 0, 0, 0.13);
@@ -521,6 +533,8 @@
     flex-direction: row-reverse;
     height: 100%;
     flex-wrap: wrap;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .faq4:hover{
     background-color: rgba(0, 0, 0, 0.13);

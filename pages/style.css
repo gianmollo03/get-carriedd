@@ -16,13 +16,26 @@
     padding:20px;
     position: sticky;
     top: 0;
+    z-index: 1;
 }   
+
 #home{
     color: white;
     text-decoration: none;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: oblique;
+    padding: 5px;
+    border: 0px double rgba(100, 100, 100, 1);
+    border-radius: 4px;
+    transition: box-shadow 300ms ease-in;
 }
+#home:hover {
+    box-shadow: 0px 0px 45px 0px rgba(255, 0, 0, 0.3); }
+  .home-header{
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+  }
 .header {
     display: flex;
     width: 20%;
@@ -33,19 +46,28 @@
     justify-content: flex-end;
     width: 80%;
 }
-.links-container{
+
+.links-container {
+  
+    transition: box-shadow 300ms ease-in;
     width: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 2px;
-}
+  }
+  
+  .links-container:hover {
+    box-shadow: 0px 0px 27px 0px rgba(255, 0, 0, 0.3);
+  }
+  
+  
 .links-container a{
     padding: 5px 0;
     text-decoration: none;
     color: white;
     font-style: italic;
 }
+
 
 .overlay-container {
     display: flex;
@@ -69,6 +91,8 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 40px;
     color: white;
+    
+    transition: all 1;
 }
 .text-container p{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -89,7 +113,7 @@
 #nosotros {
     display: flex;
     flex-direction: column;
-    background-color: #d26966;
+    background-image: linear-gradient(#408ec6,#7a2048);
 }
 .title-us {
     display: flex;  
@@ -110,7 +134,8 @@
     width: 30%;
     display: flex;
     flex-direction: column;
-    background-color: #a891b1;
+    justify-content: center;
+    align-items: center;
 }
 
 .complot img{
@@ -120,13 +145,14 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.1em;
     text-align: center;
+
 }
 
 #why {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    background-color: #c17e8b;
+    background-image: linear-gradient(#7a2048,#1e2761);
+    height: 1000px;
 }
 .title-why {
     display: flex;
@@ -136,28 +162,56 @@
     font-size: 1.5em;
     flex-direction: column;
     padding-top: 20px;
+    margin-bottom: 50px;
 }
 
 .why-container {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.why-explain{
+    display: flex;
+    justify-content: center;
+}
+.why-explain div{
+    width: auto;
+    padding-bottom: 50px;
+}
+.explaination{
+    width: 50%!important;
+    background-color: black 0.5;
+    
+}
+.explaination p{
+    font-size: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: justify;
+}
+.complot-container{
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    margin-top: 50px;
 }
+.complot-container div{
+    width: 33%;
 
+}
 .complot-why {
-    width: 300px;
     display: flex;
     flex-direction: column;
-    background-color: #a891b1;
+
+    margin-top: 30px;
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
 
 }
-.one-why{
-    background-color: #d26966;
+.complot-why:hover{
+    transform: translate(0px, 0px) scale(1, 1.2);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
 }
-.two-why{
-    background-color: #a891b1;
-}
+
+
 .complot-why img {
     align-self: center;
     border-radius: 150px;
@@ -314,7 +368,9 @@
 
 /*FAQ*/
 
-
+.body-faq-background{
+    background-image: linear-gradient(#7a2048,#1e2761);
+}
 
 
 
@@ -337,7 +393,8 @@
 
 }
 .faq-container div{
-    padding: 20px 0;
+    padding: 50px 0;
+    
 }
 
 .titleFAQ{
@@ -357,9 +414,14 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    background-color: lightcoral !important;
     align-items: center;
     flex-wrap: wrap;
+    transition: background-color 300ms ease-out;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.faq1:hover{
+    background-color: rgba(0, 0, 0, 0.13);
 }
 
 .faq1 div{
@@ -378,23 +440,27 @@
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     grid-area: question1;
+    z-index: -1;
 }
 .mediopago {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap ;
+    z-index: -1;
 }
 .tarjetas {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    z-index: -1;
 }
 .mediopago img {
 
     width: 117px;
     height: auto;
     margin: 20px 0;
+    z-index: -1;
 }
 .mediopago div{
     display: flex;
@@ -402,13 +468,8 @@
     align-items: center;
     padding: 0;
     margin: 0;
+    z-index: -1;
     
-}
-.one {
-    background-color: lightcoral !important;
-}
-.two {
-    background-color: lightblue !important;
 }
 
 .faq2{
@@ -416,7 +477,12 @@
     grid-area: faq2;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    background-color: lightblue;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+.faq2:hover{
+    background-color: rgba(0, 0, 0, 0.13);
 }
 .faq2 div{
     width: 50%;
@@ -440,6 +506,11 @@
     flex-direction: row;
     height: 100%;
     flex-wrap: wrap;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.faq3:hover{
+    background-color: rgba(0, 0, 0, 0.13);
 }
 .faq3 div{
     width: 50%;
@@ -462,6 +533,11 @@
     flex-direction: row-reverse;
     height: 100%;
     flex-wrap: wrap;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.faq4:hover{
+    background-color: rgba(0, 0, 0, 0.13);
 }
 .faq4 div{
     width: 50%;
@@ -487,7 +563,9 @@
 /*Productos*/
 
 
-
+.products-background-gradient{
+    background-image: linear-gradient(to right, #7a2048,#1e2761);
+}
 
 
 
@@ -499,9 +577,7 @@
     color: white;
     border-top: solid white;
 }
-.h1-container{
-    background-color: #d26966;
-}
+
 
 #products {
     display: flex;
@@ -516,20 +592,34 @@
     width: max-content;
     display: flex;
     flex-direction: column;
-    background-color: #d26966;
     padding:100px 20px;
-}
 
+}
+.product-category h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+    color: white;
+}
 .product-category ul li{
     padding: 20px 0;
     text-align: center;
     list-style-type: none;
-    border: solid black;
-    margin:10px 0;
+    margin:30px 0;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.6);
 }
+
 .product-category ul li a{
     text-decoration: none;
     color: black;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box-shadow-li{
+    transition: box-shadow 300ms ease-out;
+}
+.box-shadow-li:hover{
+    box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
 }
 .products {
     width: 100%;
@@ -539,7 +629,6 @@
     "product3   product4"
     "product5   product6"
     "product7   product8";
-    background-color: #c17e8b;
     justify-items: start;
     align-items: center;
 }
@@ -623,6 +712,11 @@
     flex-direction: row;
     align-items: flex-start;
 }
+.item-name{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
+}
 .image-product a{
     margin-left: 10px;
     width: 80%;
@@ -672,8 +766,7 @@
         "faq4   ";
     }
     .faq-container div{
-        padding-top: 0;
-        padding-bottom: 0;
+        padding: 20px 0;
         justify-content: center;
     }
     .faq1{
@@ -698,7 +791,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        width: 100%;background-color: lightblue;
+        width: 100%;
     }
     .faq2 div{
         width: 100%
@@ -715,7 +808,7 @@
     .faq3{
         display: flex;
         flex-direction: column;
-        background-color:#c17e8b;
+        
     }
     .faq4{
         display: flex;
@@ -769,7 +862,12 @@
 .overlay{
     padding-bottom: 0;
 }
-
+.box-shadow-li{
+    transition: box-shadow 300ms ease-out;
+}
+.box-shadow-li:hover{
+    box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
+}
 }
 
 @media only screen and (max-width:520px){

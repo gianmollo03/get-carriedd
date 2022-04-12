@@ -549,7 +549,9 @@
 /*Productos*/
 
 
-
+.products-background-gradient{
+    background-image: linear-gradient(to right, #7a2048,#1e2761);
+}
 
 
 
@@ -561,9 +563,7 @@
     color: white;
     border-top: solid white;
 }
-.h1-container{
-    background-color: #d26966;
-}
+
 
 #products {
     display: flex;
@@ -578,20 +578,34 @@
     width: max-content;
     display: flex;
     flex-direction: column;
-    background-color: #d26966;
     padding:100px 20px;
-}
 
+}
+.product-category h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 30px;
+    text-decoration: underline;
+    color: white;
+}
 .product-category ul li{
     padding: 20px 0;
     text-align: center;
     list-style-type: none;
-    border: solid black;
-    margin:10px 0;
+    margin:30px 0;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.6);
 }
+
 .product-category ul li a{
     text-decoration: none;
     color: black;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box-shadow-li{
+    transition: box-shadow 300ms ease-out;
+}
+.box-shadow-li:hover{
+    box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
 }
 .products {
     width: 100%;
@@ -601,7 +615,6 @@
     "product3   product4"
     "product5   product6"
     "product7   product8";
-    background-color: #c17e8b;
     justify-items: start;
     align-items: center;
 }
@@ -684,6 +697,11 @@
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+}
+.item-name{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.9rem;
 }
 .image-product a{
     margin-left: 10px;
@@ -830,7 +848,12 @@
 .overlay{
     padding-bottom: 0;
 }
-
+.box-shadow-li{
+    transition: box-shadow 300ms ease-out;
+}
+.box-shadow-li:hover{
+    box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
+}
 }
 
 @media only screen and (max-width:520px){

@@ -5,70 +5,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 
 /* Main Page*/
-.header-container {
-    background-color: black;
+
+.dropdown-style{
+    background-image: linear-gradient(#408ec6,#7a2048);
+}
+.btn-outline-success{
+    color:#408ec6 ;
+    border-color: #408ec6;
+}
+.btn:hover{
+    background-color: #408ec6;
     color: white;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    padding:20px;
-    position: sticky;
-    top: 0;
-    z-index: 1;
-}   
-
-#home{
-    color: white;
-    text-decoration: none;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: oblique;
-    padding: 5px;
-    border: 0px double rgba(100, 100, 100, 1);
-    border-radius: 4px;
-    transition: box-shadow 300ms ease-in;
 }
-#home:hover {
-    box-shadow: 0px 0px 45px 0px rgba(255, 0, 0, 0.3); }
-  .home-header{
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-  }
-.header {
-    display: flex;
-    width: 20%;
-}
-
-.header-navbar {
-    display: flex;
-    justify-content: flex-end;
-    width: 80%;
-}
-
-.links-container {
-  
-    transition: box-shadow 300ms ease-in;
-    width: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .links-container:hover {
-    box-shadow: 0px 0px 27px 0px rgba(255, 0, 0, 0.3);
-  }
-  
-  
-.links-container a{
-    padding: 5px 0;
-    text-decoration: none;
-    color: white;
-    font-style: italic;
-}
-
-
 .overlay-container {
     display: flex;
     height: fit-content;
@@ -131,7 +79,7 @@
 }
 
 .complot{
-    width: 30%;
+    width: 33%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,7 +95,9 @@
     text-align: center;
 
 }
-
+.complot iframe{
+    width: 50%  ;
+}
 #why {
     display: flex;
     flex-direction: column;
@@ -193,6 +143,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    height: auto;
 }
 .complot-container div{
     width: 33%;
@@ -219,26 +170,36 @@
     height: 250px;
     margin-top: 20px;
 }
-
+.complot-why h3{
+    text-align: center;
+    margin-top: 10px;
+    color: whitesmoke;
+}
 .complot-why p{
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.1em;
     text-align: center;
     margin: 20px 0;
+    color: white;
 }
-
-.footer-container {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.footer-container{
     padding: 10px 0;
-    align-items: center;
-    position: absolute;
-    bottom: auto;
-    margin: 0 auto;
+    background-color: black ;
+}
+.row{
     width: 100%;
-    
+    align-items: center;
+    flex-wrap: wrap;
+}
+.row div{
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+}
+.email{
+    display: flex;
+    flex-direction: colum;
+    flex-wrap: wrap;
 }
 .icons-container {
     display: flex;
@@ -621,6 +582,9 @@
 .box-shadow-li:hover{
     box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
 }
+.box-shadow-li a h3{
+    font-size: 20px;
+}
 .products {
     width: 100%;
     display: grid;
@@ -725,9 +689,7 @@
 
 @media only screen and (max-width: 758px){
     /*Mobile*/
-    .overlay-container{
-        padding-top: 0;
-    }
+
     .complot{
         width: 30%;
         font-size: 11px;
@@ -847,7 +809,7 @@
         "product6"
         "product7"
         "product8";
-        justify-items: start;
+        justify-items: center;
     }
     .products div{
         width: 80%;
@@ -856,18 +818,30 @@
         text-align: start;
         width: 70%;
     }
-.overlay-container{
-    padding-top: 0;
-}
-.overlay{
-    padding-bottom: 0;
-}
+
+
 .box-shadow-li{
     transition: box-shadow 300ms ease-out;
 }
 .box-shadow-li:hover{
     box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
 }
+.complot-why {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 30px;
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+
+}
+.complot-why:hover{
+    transform: translate(0px, 0px) scale(1, 1);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+}
+@media only screen and (max-width:930px){
+    .complot-why p{
+        font-size: 1em;
+    }
 }
 
 @media only screen and (max-width:520px){
@@ -898,6 +872,14 @@
     .relleno{
         padding: 50px 0;
     }
+    .complot-why p{
+        display: none;
+    }
+}
+@media only screen and  (max-width:885px){
+    .complot-why p{
+        font-size: 0.8em;
+    }
 }
 @media only screen and (max-width:500px){
         .image-product{
@@ -908,4 +890,11 @@
         .image-product h4{
             font-size: 0.9rem;
         }
+}
+@media only screen and (max-width:640px){
+
+    .complot-why h3{
+        font-size: 20px;
+    }
+}
 }

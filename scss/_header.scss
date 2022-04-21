@@ -1,0 +1,21 @@
+@import "variables";
+@import "mediaq";
+.dropdown-style{
+    background-image: linear-gradient(#408ec6,#7a2048);
+}
+.btn-outline-success{
+    color:#408ec6 ;
+    border-color: #408ec6;
+}
+.btn:hover{
+    background-color: #408ec6;
+    color: white;
+}
+.overlay-container {
+    display: flex;
+    height: fit-content;
+    justify-content: center;
+    padding-top: 100px;
+    align-items: center;
+
+}

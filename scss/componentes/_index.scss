@@ -1,5 +1,5 @@
-@import "variables";
-@import "mediaq";
+@import "../base/variables";
+@import "../base/mediaq";
 .overlay{
     display: flex;
     width: fit-content;

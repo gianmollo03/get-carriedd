@@ -1,0 +1,1944 @@
+@media only screen and (max-width: 758px) {
+  /*Mobile*/
+  .complot {
+    width: 30%;
+    font-size: 11px;
+  }
+
+  .map {
+    width: 30%;
+    height: auto;
+    align-self: center;
+  }
+
+  .title-why {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .complot-why {
+    width: 200px;
+    font-size: 13px;
+  }
+
+  .complot-why img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .faq-container {
+    grid-template-areas: "title " "faq1 " "faq1   " "faq2   " "faq2   " "faq3   " "faq3   " "faq4   " "faq4   ";
+  }
+
+  .faq-container div {
+    padding: 20px 0;
+    justify-content: center;
+  }
+
+  .faq1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mediopago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mediopago img {
+    width: 30px;
+    height: auto;
+  }
+
+  .faq2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .faq2 div {
+    width: 100%;
+  }
+
+  .titleQ2 {
+    height: auto;
+  }
+
+  .question2 {
+    margin: 10px 0;
+  }
+
+  .faq3 div {
+    width: 100%;
+  }
+
+  .faq3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 div {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  /*Mobile for products */
+  .categorys {
+    width: 20%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .product-category {
+    width: 100%;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 150px;
+  }
+
+  .products {
+    grid-template-areas: "product1" "product2" "product3" "product4" "product5" "product6" "product7" "product8";
+    justify-items: center;
+  }
+
+  .products div {
+    width: 80%;
+  }
+
+  .image-product a {
+    text-align: start;
+    width: 70%;
+  }
+
+  .box-shadow-li {
+    transition: box-shadow 300ms ease-out;
+  }
+
+  .box-shadow-li:hover {
+    box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
+  }
+
+  .complot-why {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+  }
+
+  .complot-why:hover {
+    transform: translate(0px, 0px) scale(1, 1);
+    box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 930px) {
+  .complot-why p {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 520px) {
+  .text-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-container p {
+    width: auto;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .primero {
+    padding-left: 0;
+  }
+
+  .header-navbar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .links-container {
+    font-size: 0.9rem;
+    border: solid white 2px;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 540px) {
+  .relleno {
+    padding: 50px 0;
+  }
+
+  .complot-why p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 885px) {
+  .complot-why p {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 500px) {
+  .image-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-product h4 {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 640px) {
+  .complot-why h3 {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 758px) {
+  /*Mobile*/
+  .complot {
+    width: 30%;
+    font-size: 11px;
+  }
+
+  .map {
+    width: 30%;
+    height: auto;
+    align-self: center;
+  }
+
+  .title-why {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .complot-why {
+    width: 200px;
+    font-size: 13px;
+  }
+
+  .complot-why img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .faq-container {
+    grid-template-areas: "title " "faq1 " "faq1   " "faq2   " "faq2   " "faq3   " "faq3   " "faq4   " "faq4   ";
+  }
+
+  .faq-container div {
+    padding: 20px 0;
+    justify-content: center;
+  }
+
+  .faq1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mediopago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mediopago img {
+    width: 30px;
+    height: auto;
+  }
+
+  .faq2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .faq2 div {
+    width: 100%;
+  }
+
+  .titleQ2 {
+    height: auto;
+  }
+
+  .question2 {
+    margin: 10px 0;
+  }
+
+  .faq3 div {
+    width: 100%;
+  }
+
+  .faq3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 div {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  /*Mobile for products */
+  .categorys {
+    width: 20%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .product-category {
+    width: 100%;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 150px;
+  }
+
+  .products {
+    grid-template-areas: "product1" "product2" "product3" "product4" "product5" "product6" "product7" "product8";
+    justify-items: center;
+  }
+
+  .products div {
+    width: 80%;
+  }
+
+  .image-product a {
+    text-align: start;
+    width: 70%;
+  }
+
+  .box-shadow-li {
+    transition: box-shadow 300ms ease-out;
+  }
+
+  .box-shadow-li:hover {
+    box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
+  }
+
+  .complot-why {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+  }
+
+  .complot-why:hover {
+    transform: translate(0px, 0px) scale(1, 1);
+    box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 930px) {
+  .complot-why p {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 520px) {
+  .text-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-container p {
+    width: auto;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .primero {
+    padding-left: 0;
+  }
+
+  .header-navbar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .links-container {
+    font-size: 0.9rem;
+    border: solid white 2px;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 540px) {
+  .relleno {
+    padding: 50px 0;
+  }
+
+  .complot-why p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 885px) {
+  .complot-why p {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 500px) {
+  .image-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-product h4 {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 640px) {
+  .complot-why h3 {
+    font-size: 20px;
+  }
+}
+.products-background-gradient {
+  background-image: linear-gradient(to right, #7a2048, #1e2761);
+}
+
+#products-overlay {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0;
+  background-color: black;
+  color: white;
+  border-top: solid white;
+}
+
+#products {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+#products div {
+  padding: 30px 20px;
+}
+
+.categorys {
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+  padding: 100px 20px;
+}
+
+.product-category h2 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 30px;
+  text-decoration: underline;
+  color: white;
+}
+
+.product-category ul li {
+  padding: 20px 0;
+  text-align: center;
+  list-style-type: none;
+  margin: 30px 0;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.6);
+}
+
+.product-category ul li a {
+  text-decoration: none;
+  color: black;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.box-shadow-li {
+  transition: box-shadow 300ms ease-out;
+}
+
+.box-shadow-li:hover {
+  box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
+}
+
+.box-shadow-li a h3 {
+  font-size: 20px;
+}
+
+.products {
+  width: 100%;
+  display: grid;
+  grid-template-areas: "product1   product2" "product3   product4" "product5   product6" "product7   product8";
+  justify-items: start;
+  align-items: center;
+}
+
+.products div {
+  width: 80%;
+}
+
+.product-item1 {
+  grid-area: product1;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  padding: 10px 10px;
+}
+
+.product-item2 {
+  grid-area: product2;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  padding: 10px 10px;
+}
+
+.product-item3 {
+  grid-area: product3;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  padding: 10px 10px;
+}
+
+.product-item4 {
+  grid-area: product4;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  padding: 10px 10px;
+}
+
+.product-item5 {
+  grid-area: product5;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  padding: 10px 10px;
+}
+
+.product-item6 {
+  grid-area: product6;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  padding: 10px 10px;
+}
+
+.product-item7 {
+  grid-area: product7;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  padding: 10px 10px;
+}
+
+.product-item8 {
+  grid-area: product8;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: fit-content;
+  padding: 10px 10px;
+}
+
+.image-product {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+}
+
+.item-name {
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.9rem;
+}
+
+.image-product a {
+  margin-left: 10px;
+  width: 80%;
+}
+
+@media only screen and (max-width: 758px) {
+  /*Mobile*/
+  .complot {
+    width: 30%;
+    font-size: 11px;
+  }
+
+  .map {
+    width: 30%;
+    height: auto;
+    align-self: center;
+  }
+
+  .title-why {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .complot-why {
+    width: 200px;
+    font-size: 13px;
+  }
+
+  .complot-why img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .faq-container {
+    grid-template-areas: "title " "faq1 " "faq1   " "faq2   " "faq2   " "faq3   " "faq3   " "faq4   " "faq4   ";
+  }
+
+  .faq-container div {
+    padding: 20px 0;
+    justify-content: center;
+  }
+
+  .faq1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mediopago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mediopago img {
+    width: 30px;
+    height: auto;
+  }
+
+  .faq2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .faq2 div {
+    width: 100%;
+  }
+
+  .titleQ2 {
+    height: auto;
+  }
+
+  .question2 {
+    margin: 10px 0;
+  }
+
+  .faq3 div {
+    width: 100%;
+  }
+
+  .faq3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 div {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  /*Mobile for products */
+  .categorys {
+    width: 20%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .product-category {
+    width: 100%;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 150px;
+  }
+
+  .products {
+    grid-template-areas: "product1" "product2" "product3" "product4" "product5" "product6" "product7" "product8";
+    justify-items: center;
+  }
+
+  .products div {
+    width: 80%;
+  }
+
+  .image-product a {
+    text-align: start;
+    width: 70%;
+  }
+
+  .box-shadow-li {
+    transition: box-shadow 300ms ease-out;
+  }
+
+  .box-shadow-li:hover {
+    box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
+  }
+
+  .complot-why {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+  }
+
+  .complot-why:hover {
+    transform: translate(0px, 0px) scale(1, 1);
+    box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 930px) {
+  .complot-why p {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 520px) {
+  .text-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-container p {
+    width: auto;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .primero {
+    padding-left: 0;
+  }
+
+  .header-navbar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .links-container {
+    font-size: 0.9rem;
+    border: solid white 2px;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 540px) {
+  .relleno {
+    padding: 50px 0;
+  }
+
+  .complot-why p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 885px) {
+  .complot-why p {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 500px) {
+  .image-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-product h4 {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 640px) {
+  .complot-why h3 {
+    font-size: 20px;
+  }
+}
+.overlay {
+  display: flex;
+  width: fit-content;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding-bottom: 100px;
+}
+
+.text-container h1 {
+  display: flex;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 40px;
+  color: white;
+  transition: all 1;
+}
+
+.text-container p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  width: 500px;
+  text-align: center;
+  color: white;
+}
+
+.video-overlay {
+  display: flex;
+  align-self: flex-end;
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+#nosotros {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#7a2048, #1e2761);
+}
+
+.title-us {
+  display: flex;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  align-self: center;
+  padding-top: 25px;
+}
+
+.us-container {
+  display: flex;
+  flex-direction: row;
+  margin: 50px 0;
+  justify-content: space-evenly;
+}
+
+.complot {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.complot img {
+  text-align: center;
+}
+
+.complot p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+}
+
+.complot iframe {
+  width: 50%;
+}
+
+#why {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(#1e2761, #7a2048);
+  height: 1000px;
+}
+
+.title-why {
+  display: flex;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  flex-direction: column;
+  padding-top: 20px;
+  margin-bottom: 50px;
+}
+
+.why-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.why-explain {
+  display: flex;
+  justify-content: center;
+}
+
+.why-explain div {
+  width: auto;
+  padding-bottom: 50px;
+}
+
+.explaination {
+  width: 50% !important;
+  background-color: black 0.5;
+}
+
+.explaination p {
+  font-size: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-align: justify;
+}
+
+.complot-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  height: auto;
+}
+
+.complot-container div {
+  width: 33%;
+}
+
+.complot-why {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+}
+
+.complot-why:hover {
+  transform: translate(0px, 0px) scale(1, 1.2);
+  box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
+}
+
+.complot-why img {
+  align-self: center;
+  border-radius: 150px;
+  width: 250px;
+  height: 250px;
+  margin-top: 20px;
+}
+
+.complot-why h3 {
+  text-align: center;
+  margin-top: 10px;
+  color: whitesmoke;
+}
+
+.complot-why p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.1em;
+  text-align: center;
+  margin: 20px 0;
+  color: white;
+}
+
+@media only screen and (max-width: 758px) {
+  /*Mobile*/
+  .complot {
+    width: 30%;
+    font-size: 11px;
+  }
+
+  .map {
+    width: 30%;
+    height: auto;
+    align-self: center;
+  }
+
+  .title-why {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .complot-why {
+    width: 200px;
+    font-size: 13px;
+  }
+
+  .complot-why img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .faq-container {
+    grid-template-areas: "title " "faq1 " "faq1   " "faq2   " "faq2   " "faq3   " "faq3   " "faq4   " "faq4   ";
+  }
+
+  .faq-container div {
+    padding: 20px 0;
+    justify-content: center;
+  }
+
+  .faq1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mediopago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mediopago img {
+    width: 30px;
+    height: auto;
+  }
+
+  .faq2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .faq2 div {
+    width: 100%;
+  }
+
+  .titleQ2 {
+    height: auto;
+  }
+
+  .question2 {
+    margin: 10px 0;
+  }
+
+  .faq3 div {
+    width: 100%;
+  }
+
+  .faq3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 div {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  /*Mobile for products */
+  .categorys {
+    width: 20%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .product-category {
+    width: 100%;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 150px;
+  }
+
+  .products {
+    grid-template-areas: "product1" "product2" "product3" "product4" "product5" "product6" "product7" "product8";
+    justify-items: center;
+  }
+
+  .products div {
+    width: 80%;
+  }
+
+  .image-product a {
+    text-align: start;
+    width: 70%;
+  }
+
+  .box-shadow-li {
+    transition: box-shadow 300ms ease-out;
+  }
+
+  .box-shadow-li:hover {
+    box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
+  }
+
+  .complot-why {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+  }
+
+  .complot-why:hover {
+    transform: translate(0px, 0px) scale(1, 1);
+    box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 930px) {
+  .complot-why p {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 520px) {
+  .text-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-container p {
+    width: auto;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .primero {
+    padding-left: 0;
+  }
+
+  .header-navbar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .links-container {
+    font-size: 0.9rem;
+    border: solid white 2px;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 540px) {
+  .relleno {
+    padding: 50px 0;
+  }
+
+  .complot-why p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 885px) {
+  .complot-why p {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 500px) {
+  .image-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-product h4 {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 640px) {
+  .complot-why h3 {
+    font-size: 20px;
+  }
+}
+.dropdown-style {
+  background-image: linear-gradient(#408ec6, #7a2048);
+}
+
+.btn-outline-success {
+  color: #408ec6;
+  border-color: #408ec6;
+}
+
+.btn:hover {
+  background-color: #408ec6;
+  color: white;
+}
+
+.overlay-container {
+  display: flex;
+  height: fit-content;
+  justify-content: center;
+  padding-top: 100px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 758px) {
+  /*Mobile*/
+  .complot {
+    width: 30%;
+    font-size: 11px;
+  }
+
+  .map {
+    width: 30%;
+    height: auto;
+    align-self: center;
+  }
+
+  .title-why {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .complot-why {
+    width: 200px;
+    font-size: 13px;
+  }
+
+  .complot-why img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .faq-container {
+    grid-template-areas: "title " "faq1 " "faq1   " "faq2   " "faq2   " "faq3   " "faq3   " "faq4   " "faq4   ";
+  }
+
+  .faq-container div {
+    padding: 20px 0;
+    justify-content: center;
+  }
+
+  .faq1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mediopago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mediopago img {
+    width: 30px;
+    height: auto;
+  }
+
+  .faq2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .faq2 div {
+    width: 100%;
+  }
+
+  .titleQ2 {
+    height: auto;
+  }
+
+  .question2 {
+    margin: 10px 0;
+  }
+
+  .faq3 div {
+    width: 100%;
+  }
+
+  .faq3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 div {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  /*Mobile for products */
+  .categorys {
+    width: 20%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .product-category {
+    width: 100%;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 150px;
+  }
+
+  .products {
+    grid-template-areas: "product1" "product2" "product3" "product4" "product5" "product6" "product7" "product8";
+    justify-items: center;
+  }
+
+  .products div {
+    width: 80%;
+  }
+
+  .image-product a {
+    text-align: start;
+    width: 70%;
+  }
+
+  .box-shadow-li {
+    transition: box-shadow 300ms ease-out;
+  }
+
+  .box-shadow-li:hover {
+    box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
+  }
+
+  .complot-why {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+  }
+
+  .complot-why:hover {
+    transform: translate(0px, 0px) scale(1, 1);
+    box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 930px) {
+  .complot-why p {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 520px) {
+  .text-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-container p {
+    width: auto;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .primero {
+    padding-left: 0;
+  }
+
+  .header-navbar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .links-container {
+    font-size: 0.9rem;
+    border: solid white 2px;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 540px) {
+  .relleno {
+    padding: 50px 0;
+  }
+
+  .complot-why p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 885px) {
+  .complot-why p {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 500px) {
+  .image-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-product h4 {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 640px) {
+  .complot-why h3 {
+    font-size: 20px;
+  }
+}
+.footer-container {
+  padding: 10px 0;
+  background-color: black;
+}
+
+.row {
+  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.row div {
+  display: flex;
+  justify-content: center;
+  color: whitesmoke;
+}
+
+.email {
+  display: flex;
+  flex-direction: colum;
+  flex-wrap: wrap;
+}
+
+.icons-container {
+  display: flex;
+}
+
+.mail {
+  color: white;
+  display: flex;
+  padding-right: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.icon img {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+}
+
+.logo {
+  color: white;
+  margin-left: 10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: italic;
+}
+
+@media only screen and (max-width: 758px) {
+  /*Mobile*/
+  .complot {
+    width: 30%;
+    font-size: 11px;
+  }
+
+  .map {
+    width: 30%;
+    height: auto;
+    align-self: center;
+  }
+
+  .title-why {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .complot-why {
+    width: 200px;
+    font-size: 13px;
+  }
+
+  .complot-why img {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .faq-container {
+    grid-template-areas: "title " "faq1 " "faq1   " "faq2   " "faq2   " "faq3   " "faq3   " "faq4   " "faq4   ";
+  }
+
+  .faq-container div {
+    padding: 20px 0;
+    justify-content: center;
+  }
+
+  .faq1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mediopago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mediopago img {
+    width: 30px;
+    height: auto;
+  }
+
+  .faq2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .faq2 div {
+    width: 100%;
+  }
+
+  .titleQ2 {
+    height: auto;
+  }
+
+  .question2 {
+    margin: 10px 0;
+  }
+
+  .faq3 div {
+    width: 100%;
+  }
+
+  .faq3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 div {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  /*Mobile for products */
+  .categorys {
+    width: 20%;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+  }
+
+  .product-category {
+    width: 100%;
+  }
+
+  .sticky {
+    position: sticky;
+    top: 150px;
+  }
+
+  .products {
+    grid-template-areas: "product1" "product2" "product3" "product4" "product5" "product6" "product7" "product8";
+    justify-items: center;
+  }
+
+  .products div {
+    width: 80%;
+  }
+
+  .image-product a {
+    text-align: start;
+    width: 70%;
+  }
+
+  .box-shadow-li {
+    transition: box-shadow 300ms ease-out;
+  }
+
+  .box-shadow-li:hover {
+    box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
+  }
+
+  .complot-why {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+  }
+
+  .complot-why:hover {
+    transform: translate(0px, 0px) scale(1, 1);
+    box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 930px) {
+  .complot-why p {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 520px) {
+  .text-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-container p {
+    width: auto;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .primero {
+    padding-left: 0;
+  }
+
+  .header-navbar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .links-container {
+    font-size: 0.9rem;
+    border: solid white 2px;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 540px) {
+  .relleno {
+    padding: 50px 0;
+  }
+
+  .complot-why p {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 885px) {
+  .complot-why p {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 500px) {
+  .image-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-product h4 {
+    font-size: 0.9rem;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 640px) {
+  .complot-why h3 {
+    font-size: 20px;
+  }
+}
+.body-faq-background {
+  background-image: linear-gradient(#7a2048, #1e2761);
+}
+
+.faq-container {
+  display: grid;
+  grid-template-areas: "title  title" "faq1 faq1" "faq2 faq2" "faq3 faq3" "faq4 faq4";
+  align-items: center;
+}
+
+.faq-container div {
+  padding: 50px 0;
+}
+
+.titleFAQ {
+  display: grid;
+  grid-area: title;
+  align-self: center;
+  justify-items: center;
+  padding: 10px 0;
+  background-color: rgb(20, 20, 20);
+  color: #fff;
+  font-size: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-variant: small-caps;
+}
+
+.faq1 {
+  grid-area: faq1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  transition: background-color 300ms ease-out;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.faq1:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+.faq1 div {
+  width: 50% !important;
+}
+
+.titleQ1 {
+  display: flex;
+  justify-content: center;
+  grid-area: titleQ1;
+}
+
+.question1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  grid-area: question1;
+  z-index: -1;
+}
+
+.mediopago {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  z-index: -1;
+}
+
+.tarjetas {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  z-index: -1;
+}
+
+.mediopago img {
+  width: 117px;
+  height: auto;
+  margin: 20px 0;
+  z-index: -1;
+}
+
+.mediopago div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  z-index: -1;
+}
+
+.faq2 {
+  display: flex;
+  grid-area: faq2;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.faq2:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+.faq2 div {
+  width: 50%;
+}
+
+.titleQ2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: titleQ2;
+  width: 100%;
+}
+
+.question2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: question2;
+}
+
+.faq3 {
+  display: flex;
+  grid-area: faq3;
+  flex-direction: row;
+  height: 100%;
+  flex-wrap: wrap;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.faq3:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+.faq3 div {
+  width: 50%;
+}
+
+.titleQ3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: titleQ3;
+}
+
+.question3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: question3;
+}
+
+.faq4 {
+  display: flex;
+  grid-area: faq4;
+  flex-direction: row-reverse;
+  height: 100%;
+  flex-wrap: wrap;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.faq4:hover {
+  background-color: rgba(0, 0, 0, 0.13);
+}
+
+.faq4 div {
+  width: 50%;
+}
+
+.titleQ4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: titleQ4;
+}
+
+.question4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  grid-area: question4;
+}
+
+.Qp {
+  width: 50%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@media only screen and (max-width: 1300px) {
+  .faq-container {
+    grid-template-areas: "title " "faq1 " "faq1   " "faq2   " "faq2   " "faq3   " "faq3   " "faq4   " "faq4   ";
+  }
+
+  .faq-container div {
+    padding: 20px 0;
+    justify-content: center;
+  }
+
+  .faq1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mediopago {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .mediopago img {
+    width: 30px;
+    height: auto;
+  }
+
+  .faq2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .faq2 div {
+    width: 100%;
+  }
+
+  .titleQ2 {
+    height: auto;
+  }
+
+  .question2 {
+    margin: 10px 0;
+  }
+
+  .faq3 div {
+    width: 100%;
+  }
+
+  .faq3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 div {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

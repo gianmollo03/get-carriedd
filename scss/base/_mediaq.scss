@@ -1,0 +1,211 @@
+@media only screen and (max-width: 758px){
+    /*Mobile*/
+
+    .complot{
+        width: 30%;
+        font-size: 11px;
+    }
+    .map {
+        width: 30%;
+        height: auto;
+        align-self: center;
+    }
+    .title-why{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .complot-why{
+        width: 200px;
+        font-size: 13px;
+    }
+    .complot-why img{
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width:1300px){
+    .faq-container{
+        grid-template-areas: 
+        "title "
+        "faq1 "
+        "faq1   "
+        "faq2   "
+        "faq2   "
+        "faq3   "
+        "faq3   "
+        "faq4   "
+        "faq4   ";
+    }
+    .faq-container div{
+        padding: 20px 0;
+        justify-content: center;
+    }
+    .faq1{
+      
+        display: flex;
+        flex-direction: column; 
+    }
+    .question1{
+        display:flex;
+        flex-direction: column;
+    }
+    .mediopago{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mediopago img{
+        width: 30px;
+        height: auto;
+    }
+    .faq2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .faq2 div{
+        width: 100%
+    };
+    .titleQ2{
+        height: auto;
+    }
+    .question2{
+        margin: 10px 0;
+    }
+    .faq3 div{
+        width: 100%
+    };
+    .faq3{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .faq4{
+        display: flex;
+      flex-direction: column;
+     
+    }
+    .faq4 div{
+        width: 100%;
+        padding: 10px 0;
+    }
+
+}
+@media only screen and (max-width:1150px){
+    /*Mobile for products */
+    .categorys{
+        width: 20%;
+        font-size: 10px;
+        display: flex;
+        align-items: center;
+        z-index: -1;
+    }
+    .product-category{
+        width: 100%;
+    } 
+    .sticky{
+        position: sticky;
+        top: 150px;
+    }
+    .products{
+        grid-template-areas: 
+        "product1"
+        "product2"
+        "product3"
+        "product4"
+        "product5"
+        "product6"
+        "product7"
+        "product8";
+        justify-items: center;
+    }
+    .products div{
+        width: 80%;
+    }
+    .image-product a{
+        text-align: start;
+        width: 70%;
+    }
+
+
+.box-shadow-li{
+    transition: box-shadow 300ms ease-out;
+}
+.box-shadow-li:hover{
+    box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
+}
+.complot-why {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 30px;
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+
+}
+.complot-why:hover{
+    transform: translate(0px, 0px) scale(1, 1);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
+}
+@media only screen and (max-width:930px){
+    .complot-why p{
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width:520px){
+    .text-container h1{
+        font-size: 1.8rem;
+    }
+    .text-container p{
+        width: auto;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+        
+.primero{
+    padding-left: 0;
+}
+.header-navbar{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+.links-container{
+    font-size: 0.9rem;
+    border: solid white 2px;
+}
+}
+
+@media only screen and (max-width: 540px){
+    .relleno{
+        padding: 50px 0;
+    }
+    .complot-why p{
+        display: none;
+    }
+}
+@media only screen and  (max-width:885px){
+    .complot-why p{
+        font-size: 0.8em;
+    }
+}
+@media only screen and (max-width:500px){
+        .image-product{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .image-product h4{
+            font-size: 0.9rem;
+        }
+}
+@media only screen and (max-width:640px){
+
+    .complot-why h3{
+        font-size: 20px;
+    }
+}
+}

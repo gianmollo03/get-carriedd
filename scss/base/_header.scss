@@ -1,5 +1,9 @@
 @import "variables";
 @import "mediaq";
+@mixin flexbox ($display,$justify-c){
+    display: $display;
+    justify-content: $justify-c ;
+}
 .dropdown-style{
     background-image: linear-gradient(#408ec6,#7a2048);
 }
@@ -12,9 +16,8 @@
     color: white;
 }
 .overlay-container {
-    display: flex;
+    @include flexbox(flex,center);
     height: fit-content;
-    justify-content: center;
     padding-top: 100px;
     align-items: center;
 

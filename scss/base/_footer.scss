@@ -1,5 +1,9 @@
 @import "variables";
 @import "mediaq";
+@mixin flexbox ($display,$justify-c){
+    display: $display;
+    justify-content: $justify-c ;
+}
 .footer-container{
     padding: 10px 0;
     background-color: black ;
@@ -10,8 +14,7 @@
     flex-wrap: wrap;
 }
 .row div{
-    display: flex;
-    justify-content: center;
+    @include flexbox(flex, center);
     color: whitesmoke;
 }
 .email{

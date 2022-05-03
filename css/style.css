@@ -209,6 +209,15 @@
   .complot-why h3 {
     font-size: 20px;
   }
+
+  .images-footer {
+    width: 50px;
+    height: 50px;
+  }
+
+  .email p {
+    font-size: 0.7rem;
+  }
 }
 @media only screen and (max-width: 758px) {
   /*Mobile*/
@@ -420,6 +429,15 @@
 @media only screen and (max-width: 1150px) and (max-width: 640px) {
   .complot-why h3 {
     font-size: 20px;
+  }
+
+  .images-footer {
+    width: 50px;
+    height: 50px;
+  }
+
+  .email p {
+    font-size: 0.7rem;
   }
 }
 .products-background-gradient {
@@ -798,6 +816,15 @@
   .complot-why h3 {
     font-size: 20px;
   }
+
+  .images-footer {
+    width: 50px;
+    height: 50px;
+  }
+
+  .email p {
+    font-size: 0.7rem;
+  }
 }
 .overlay {
   display: flex;
@@ -813,6 +840,7 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 40px;
   color: white;
+  overflow-x: visible;
   transition: all 1;
 }
 
@@ -845,6 +873,9 @@
   font-size: 1.5em;
   align-self: center;
   padding-top: 25px;
+}
+.title-us h2 {
+  overflow-x: visible;
 }
 
 .us-container {
@@ -893,11 +924,15 @@
   padding-top: 20px;
   margin-bottom: 50px;
 }
+.title-why h2 {
+  overflow-x: visible;
+}
 
 .why-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow-x: visible;
 }
 
 .why-explain {
@@ -926,10 +961,15 @@
   flex-direction: row;
   justify-content: space-evenly;
   height: auto;
+  overflow-x: visible;
+}
+.complot-container .complot-why h3 {
+  overflow-x: visible;
 }
 
 .complot-container div {
   width: 33%;
+  overflow-x: visible;
 }
 
 .complot-why {
@@ -1177,6 +1217,15 @@
   .complot-why h3 {
     font-size: 20px;
   }
+
+  .images-footer {
+    width: 50px;
+    height: 50px;
+  }
+
+  .email p {
+    font-size: 0.7rem;
+  }
 }
 .dropdown-style {
   background-image: linear-gradient(#408ec6, #7a2048);
@@ -1185,6 +1234,7 @@
 .btn-outline-success {
   color: #408ec6;
   border-color: #408ec6;
+  overflow-x: visible;
 }
 
 .btn:hover {
@@ -1411,28 +1461,39 @@
   .complot-why h3 {
     font-size: 20px;
   }
+
+  .images-footer {
+    width: 50px;
+    height: 50px;
+  }
+
+  .email p {
+    font-size: 0.7rem;
+  }
 }
 .footer-container {
   padding: 10px 0;
   background-color: black;
-}
-
-.row {
-  width: 100%;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.row div {
   display: flex;
-  justify-content: center;
-  color: whitesmoke;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-container .web-name-footer {
+  color: white;
+  padding-left: 5px;
+}
+.footer-container .images-footer {
+  width: fit-content;
 }
 
 .email {
   display: flex;
-  flex-direction: colum;
+  width: 33%;
   flex-wrap: wrap;
+  color: white;
+  margin-right: 20px;
 }
 
 .icons-container {
@@ -1669,6 +1730,15 @@
 @media only screen and (max-width: 1150px) and (max-width: 640px) {
   .complot-why h3 {
     font-size: 20px;
+  }
+
+  .images-footer {
+    width: 50px;
+    height: 50px;
+  }
+
+  .email p {
+    font-size: 0.7rem;
   }
 }
 .body-faq-background {
@@ -2152,6 +2222,15 @@ body {
   .complot-why h3 {
     font-size: 20px;
   }
+
+  .images-footer {
+    width: 50px;
+    height: 50px;
+  }
+
+  .email p {
+    font-size: 0.7rem;
+  }
 }
 #Soporte {
   display: flex;
@@ -2243,6 +2322,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 40px;
   font-style: italic;
+}
+
+* {
+  overflow-x: hidden;
 }
 
 /*# sourceMappingURL=style.css.map */

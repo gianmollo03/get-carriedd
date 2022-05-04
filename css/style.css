@@ -1,30 +1,35 @@
 @media only screen and (max-width: 758px) {
   /*Mobile*/
-  .complot {
-    width: 30%;
-    font-size: 11px;
-  }
-
-  .map {
-    width: 30%;
-    height: auto;
-    align-self: center;
-  }
-
-  .title-why {
+  .us-container {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .us-container .complot {
+    width: 75%;
+  }
+  .us-container .complot p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+  }
+  .us-container .map iframe {
+    width: 100%;
+    height: 300px;
   }
 
-  .complot-why {
-    width: 200px;
-    font-size: 13px;
+  .why-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .complot-why img {
-    width: 100px;
-    height: 100px;
+  .why-container .why-explain {
+    color: white;
+    text-align: justify;
+    width: 75%;
+  }
+  .why-container .complot-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -204,8 +209,19 @@
   .image-product h4 {
     font-size: 0.9rem;
   }
+
+  .products-background-gradient {
+    overflow-x: hidden;
+  }
 }
 @media only screen and (max-width: 1150px) and (max-width: 640px) {
+  .overlay-container video {
+    display: none;
+  }
+  .overlay-container .overlay-background-mobile {
+    display: block;
+  }
+
   .complot-why h3 {
     font-size: 20px;
   }
@@ -221,31 +237,36 @@
 }
 @media only screen and (max-width: 758px) {
   /*Mobile*/
-  .complot {
-    width: 30%;
-    font-size: 11px;
-  }
-
-  .map {
-    width: 30%;
-    height: auto;
-    align-self: center;
-  }
-
-  .title-why {
+  .us-container {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .us-container .complot {
+    width: 75%;
+  }
+  .us-container .complot p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+  }
+  .us-container .map iframe {
+    width: 100%;
+    height: 300px;
   }
 
-  .complot-why {
-    width: 200px;
-    font-size: 13px;
+  .why-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .complot-why img {
-    width: 100px;
-    height: 100px;
+  .why-container .why-explain {
+    color: white;
+    text-align: justify;
+    width: 75%;
+  }
+  .why-container .complot-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -425,8 +446,19 @@
   .image-product h4 {
     font-size: 0.9rem;
   }
+
+  .products-background-gradient {
+    overflow-x: hidden;
+  }
 }
 @media only screen and (max-width: 1150px) and (max-width: 640px) {
+  .overlay-container video {
+    display: none;
+  }
+  .overlay-container .overlay-background-mobile {
+    display: block;
+  }
+
   .complot-why h3 {
     font-size: 20px;
   }
@@ -607,31 +639,36 @@
 
 @media only screen and (max-width: 758px) {
   /*Mobile*/
-  .complot {
-    width: 30%;
-    font-size: 11px;
-  }
-
-  .map {
-    width: 30%;
-    height: auto;
-    align-self: center;
-  }
-
-  .title-why {
+  .us-container {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .us-container .complot {
+    width: 75%;
+  }
+  .us-container .complot p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+  }
+  .us-container .map iframe {
+    width: 100%;
+    height: 300px;
   }
 
-  .complot-why {
-    width: 200px;
-    font-size: 13px;
+  .why-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .complot-why img {
-    width: 100px;
-    height: 100px;
+  .why-container .why-explain {
+    color: white;
+    text-align: justify;
+    width: 75%;
+  }
+  .why-container .complot-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -811,8 +848,19 @@
   .image-product h4 {
     font-size: 0.9rem;
   }
+
+  .products-background-gradient {
+    overflow-x: hidden;
+  }
 }
 @media only screen and (max-width: 1150px) and (max-width: 640px) {
+  .overlay-container video {
+    display: none;
+  }
+  .overlay-container .overlay-background-mobile {
+    display: block;
+  }
+
   .complot-why h3 {
     font-size: 20px;
   }
@@ -826,6 +874,17 @@
     font-size: 0.7rem;
   }
 }
+.overlay-container video {
+  height: auto;
+}
+.overlay-container .overlay-background-mobile {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
 .overlay {
   display: flex;
   width: fit-content;
@@ -876,6 +935,7 @@
 }
 .title-us h2 {
   overflow-x: visible;
+  color: white;
 }
 
 .us-container {
@@ -895,12 +955,14 @@
 
 .complot img {
   text-align: center;
+  color: white;
 }
 
 .complot p {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 1.1em;
   text-align: center;
+  color: white;
 }
 
 .complot iframe {
@@ -910,8 +972,9 @@
 #why {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-image: linear-gradient(#1e2761, #7a2048);
-  height: 1000px;
+  height: auto;
 }
 
 .title-why {
@@ -920,40 +983,41 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-weight: bold;
   font-size: 1.5em;
+  width: 100%;
   flex-direction: column;
   padding-top: 20px;
   margin-bottom: 50px;
 }
 .title-why h2 {
   overflow-x: visible;
+  color: white;
+  text-align: center;
+}
+.title-why p {
+  width: 85%;
+  color: white;
 }
 
 .why-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex-wrap: wrap;
   overflow-x: visible;
 }
 
 .why-explain {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+}
+.why-explain p {
+  color: white;
+  text-align: center;
 }
 
 .why-explain div {
   width: auto;
   padding-bottom: 50px;
-}
-
-.explaination {
-  width: 50% !important;
-  background-color: black 0.5;
-}
-
-.explaination p {
-  font-size: 20px;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  text-align: justify;
 }
 
 .complot-container {
@@ -1008,31 +1072,36 @@
 
 @media only screen and (max-width: 758px) {
   /*Mobile*/
-  .complot {
-    width: 30%;
-    font-size: 11px;
-  }
-
-  .map {
-    width: 30%;
-    height: auto;
-    align-self: center;
-  }
-
-  .title-why {
+  .us-container {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .us-container .complot {
+    width: 75%;
+  }
+  .us-container .complot p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+  }
+  .us-container .map iframe {
+    width: 100%;
+    height: 300px;
   }
 
-  .complot-why {
-    width: 200px;
-    font-size: 13px;
+  .why-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .complot-why img {
-    width: 100px;
-    height: 100px;
+  .why-container .why-explain {
+    color: white;
+    text-align: justify;
+    width: 75%;
+  }
+  .why-container .complot-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -1212,8 +1281,19 @@
   .image-product h4 {
     font-size: 0.9rem;
   }
+
+  .products-background-gradient {
+    overflow-x: hidden;
+  }
 }
 @media only screen and (max-width: 1150px) and (max-width: 640px) {
+  .overlay-container video {
+    display: none;
+  }
+  .overlay-container .overlay-background-mobile {
+    display: block;
+  }
+
   .complot-why h3 {
     font-size: 20px;
   }
@@ -1234,7 +1314,6 @@
 .btn-outline-success {
   color: #408ec6;
   border-color: #408ec6;
-  overflow-x: visible;
 }
 
 .btn:hover {
@@ -1252,31 +1331,36 @@
 
 @media only screen and (max-width: 758px) {
   /*Mobile*/
-  .complot {
-    width: 30%;
-    font-size: 11px;
-  }
-
-  .map {
-    width: 30%;
-    height: auto;
-    align-self: center;
-  }
-
-  .title-why {
+  .us-container {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .us-container .complot {
+    width: 75%;
+  }
+  .us-container .complot p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+  }
+  .us-container .map iframe {
+    width: 100%;
+    height: 300px;
   }
 
-  .complot-why {
-    width: 200px;
-    font-size: 13px;
+  .why-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .complot-why img {
-    width: 100px;
-    height: 100px;
+  .why-container .why-explain {
+    color: white;
+    text-align: justify;
+    width: 75%;
+  }
+  .why-container .complot-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -1456,8 +1540,19 @@
   .image-product h4 {
     font-size: 0.9rem;
   }
+
+  .products-background-gradient {
+    overflow-x: hidden;
+  }
 }
 @media only screen and (max-width: 1150px) and (max-width: 640px) {
+  .overlay-container video {
+    display: none;
+  }
+  .overlay-container .overlay-background-mobile {
+    display: block;
+  }
+
   .complot-why h3 {
     font-size: 20px;
   }
@@ -1520,33 +1615,42 @@
   font-style: italic;
 }
 
+.web-name-footer {
+  margin-left: 1rem;
+}
+
 @media only screen and (max-width: 758px) {
   /*Mobile*/
-  .complot {
-    width: 30%;
-    font-size: 11px;
-  }
-
-  .map {
-    width: 30%;
-    height: auto;
-    align-self: center;
-  }
-
-  .title-why {
+  .us-container {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .us-container .complot {
+    width: 75%;
+  }
+  .us-container .complot p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+  }
+  .us-container .map iframe {
+    width: 100%;
+    height: 300px;
   }
 
-  .complot-why {
-    width: 200px;
-    font-size: 13px;
+  .why-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .complot-why img {
-    width: 100px;
-    height: 100px;
+  .why-container .why-explain {
+    color: white;
+    text-align: justify;
+    width: 75%;
+  }
+  .why-container .complot-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -1726,8 +1830,19 @@
   .image-product h4 {
     font-size: 0.9rem;
   }
+
+  .products-background-gradient {
+    overflow-x: hidden;
+  }
 }
 @media only screen and (max-width: 1150px) and (max-width: 640px) {
+  .overlay-container video {
+    display: none;
+  }
+  .overlay-container .overlay-background-mobile {
+    display: block;
+  }
+
   .complot-why h3 {
     font-size: 20px;
   }
@@ -2013,31 +2128,36 @@ body {
 
 @media only screen and (max-width: 758px) {
   /*Mobile*/
-  .complot {
-    width: 30%;
-    font-size: 11px;
-  }
-
-  .map {
-    width: 30%;
-    height: auto;
-    align-self: center;
-  }
-
-  .title-why {
+  .us-container {
     display: flex;
-    justify-content: center;
-    text-align: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .us-container .complot {
+    width: 75%;
+  }
+  .us-container .complot p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+  }
+  .us-container .map iframe {
+    width: 100%;
+    height: 300px;
   }
 
-  .complot-why {
-    width: 200px;
-    font-size: 13px;
+  .why-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .complot-why img {
-    width: 100px;
-    height: 100px;
+  .why-container .why-explain {
+    color: white;
+    text-align: justify;
+    width: 75%;
+  }
+  .why-container .complot-container {
+    flex-direction: column;
+    align-items: center;
   }
 }
 @media only screen and (max-width: 1300px) {
@@ -2217,8 +2337,19 @@ body {
   .image-product h4 {
     font-size: 0.9rem;
   }
+
+  .products-background-gradient {
+    overflow-x: hidden;
+  }
 }
 @media only screen and (max-width: 1150px) and (max-width: 640px) {
+  .overlay-container video {
+    display: none;
+  }
+  .overlay-container .overlay-background-mobile {
+    display: block;
+  }
+
   .complot-why h3 {
     font-size: 20px;
   }

@@ -1,28 +1,41 @@
 @media only screen and (max-width: 758px){
     /*Mobile*/
-
-    .complot{
-        width: 30%;
-        font-size: 11px;
-    }
-    .map {
-        width: 30%;
-        height: auto;
-        align-self: center;
-    }
-    .title-why{
+    .us-container{
         display: flex;
-        justify-content: center;
-        text-align: center;
+        flex-direction: column;
+        align-items: center;
+
+            .complot{
+                width: 75%;
+                p{
+                    margin-top: 15px;
+                    font-size: 1.1rem;
+                }
+            }
+            .map {
+                iframe{
+                    width: 100%;
+                    height: 300px;
+                }
+               
+            }
+
     }
-    .complot-why{
-        width: 200px;
-        font-size: 13px;
+    .why-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .why-explain{
+            color: white;
+            text-align: justify;
+            width: 75%;
+        }
+        .complot-container{
+            flex-direction: column;
+            align-items: center;
+        }
     }
-    .complot-why img{
-        width: 100px;
-        height: 100px;
-    }
+
 }
 
 @media only screen and (max-width:1300px){
@@ -201,9 +214,20 @@
         .image-product h4{
             font-size: 0.9rem;
         }
+        .products-background-gradient{
+            overflow-x: hidden;
+
+        }
 }
 @media only screen and (max-width:640px){
-
+    .overlay-container{
+        video{
+            display: none;
+        }
+        .overlay-background-mobile{
+            display: block;
+        }
+    }
     .complot-why h3{
         font-size: 20px;
     }

@@ -1,6 +1,8 @@
 @import "../base/variables";
 @import "../base/mediaq";
-
+*{
+    overflow-x: visible;
+}
 .body-faq-background{
     background-image: linear-gradient(#7a2048,#1e2761);
 }
@@ -74,6 +76,7 @@
     align-items: center;
     flex-wrap: wrap ;
     z-index: -1;
+
 }
 .tarjetas {
     display: flex;

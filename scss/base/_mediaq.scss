@@ -167,6 +167,12 @@
 }
 
 @media only screen and (max-width:520px){
+
+    .footer-container{
+        div{
+            width:auto;
+        }
+    }
     .text-container h1{
         font-size: 1.8rem;
     }

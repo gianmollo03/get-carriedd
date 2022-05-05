@@ -153,6 +153,10 @@
   }
 }
 @media only screen and (max-width: 1150px) and (max-width: 520px) {
+  .footer-container div {
+    width: auto;
+  }
+
   .text-container h1 {
     font-size: 1.8rem;
   }
@@ -379,6 +383,10 @@
   }
 }
 @media only screen and (max-width: 1150px) and (max-width: 520px) {
+  .footer-container div {
+    width: auto;
+  }
+
   .text-container h1 {
     font-size: 1.8rem;
   }
@@ -452,15 +460,14 @@
 }
 .products-background-gradient {
   background-image: linear-gradient(to right, #7a2048, #1e2761);
+  overflow-x: hidden;
 }
 
 #products-overlay {
   display: flex;
   justify-content: center;
-  padding: 10px 0;
   background-color: black;
   color: white;
-  border-top: solid white;
 }
 
 #products {
@@ -468,9 +475,8 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-
 #products div {
-  padding: 30px 20px;
+  width: auto;
 }
 
 .categorys {
@@ -770,6 +776,10 @@
   }
 }
 @media only screen and (max-width: 1150px) and (max-width: 520px) {
+  .footer-container div {
+    width: auto;
+  }
+
   .text-container h1 {
     font-size: 1.8rem;
   }
@@ -963,6 +973,7 @@
 .title-why p {
   width: 85%;
   color: white;
+  text-align: center;
 }
 
 .why-container {
@@ -971,6 +982,7 @@
   justify-content: center;
   flex-wrap: wrap;
   overflow-x: visible;
+  height: auto;
 }
 
 .why-explain {
@@ -1011,7 +1023,7 @@
 }
 
 .complot-why:hover {
-  transform: translate(0px, 0px) scale(1, 1.2);
+  transform: translate(0px, 0px) scale(1, 1);
   box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
 }
 
@@ -1192,6 +1204,10 @@
   }
 }
 @media only screen and (max-width: 1150px) and (max-width: 520px) {
+  .footer-container div {
+    width: auto;
+  }
+
   .text-container h1 {
     font-size: 1.8rem;
   }
@@ -1440,6 +1456,10 @@
   }
 }
 @media only screen and (max-width: 1150px) and (max-width: 520px) {
+  .footer-container div {
+    width: auto;
+  }
+
   .text-container h1 {
     font-size: 1.8rem;
   }
@@ -1519,6 +1539,9 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+}
+.footer-container div {
+  width: 33%;
 }
 .footer-container .web-name-footer {
   color: white;
@@ -1719,6 +1742,10 @@
   }
 }
 @media only screen and (max-width: 1150px) and (max-width: 520px) {
+  .footer-container div {
+    width: auto;
+  }
+
   .text-container h1 {
     font-size: 1.8rem;
   }
@@ -2223,6 +2250,10 @@ body {
   }
 }
 @media only screen and (max-width: 1150px) and (max-width: 520px) {
+  .footer-container div {
+    width: auto;
+  }
+
   .text-container h1 {
     font-size: 1.8rem;
   }

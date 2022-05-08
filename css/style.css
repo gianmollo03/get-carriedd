@@ -213,6 +213,7 @@
   }
   .overlay-container .overlay-background-mobile {
     display: block;
+    object-fit: cover;
   }
 
   .complot-why h3 {
@@ -443,6 +444,7 @@
   }
   .overlay-container .overlay-background-mobile {
     display: block;
+    object-fit: cover;
   }
 
   .complot-why h3 {
@@ -836,6 +838,7 @@
   }
   .overlay-container .overlay-background-mobile {
     display: block;
+    object-fit: cover;
   }
 
   .complot-why h3 {
@@ -1264,6 +1267,7 @@
   }
   .overlay-container .overlay-background-mobile {
     display: block;
+    object-fit: cover;
   }
 
   .complot-why h3 {
@@ -1516,6 +1520,7 @@
   }
   .overlay-container .overlay-background-mobile {
     display: block;
+    object-fit: cover;
   }
 
   .complot-why h3 {
@@ -1802,6 +1807,7 @@
   }
   .overlay-container .overlay-background-mobile {
     display: block;
+    object-fit: cover;
   }
 
   .complot-why h3 {
@@ -2310,6 +2316,7 @@ body {
   }
   .overlay-container .overlay-background-mobile {
     display: block;
+    object-fit: cover;
   }
 
   .complot-why h3 {

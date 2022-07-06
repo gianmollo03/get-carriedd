@@ -62,12 +62,13 @@
 #submit {
     display: flex;
     margin-top: 10px;
-    padding: 10px 50px;
+    margin-bottom: 5px;
+    padding: 0 70px;
     background-color: #c17e8b;
     border: none;
-    border-radius: 10px 10px;
     width: max-content;
     cursor: pointer;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 #submit:hover{

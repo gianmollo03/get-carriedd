@@ -106,53 +106,6 @@
 
 }
 @media only screen and (max-width:1150px){
-    /*Mobile for products */
-    .categorys{
-        width: 20%;
-        font-size: 10px;
-        display: flex;
-        align-items: center;
-        z-index: -1;
-    }
-    .product-category{
-        width: 100%;
-    } 
-    .sticky{
-        position: sticky;
-        top: 150px;
-    }
-    .products{
-        grid-template-areas: 
-        "product1"
-        "product2"
-        "product3"
-        "product4"
-        "product5"
-        "product6"
-        "product7"
-        "product8";
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-    }
-    .products div{
-        width: 80%;
-    }
-    .image-product a{
-        text-align: start;
-        width: 70%;
-    }
-    .products{
-        position: relative;
-        top: 100px;
-    }
-
-.box-shadow-li{
-    transition: box-shadow 300ms ease-out;
-}
-.box-shadow-li:hover{
-    box-shadow: 0px 0px 18px 0px rgba(0, 39, 82, 0.84);
-}
 .complot-why {
     display: flex;
     flex-direction: column;

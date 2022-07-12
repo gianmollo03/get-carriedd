@@ -943,10 +943,12 @@
   font-size: 1.1em;
   text-align: center;
   color: white;
+  width: 90%;
 }
 
 .complot iframe {
-  width: 50%;
+  height: 100%;
+  width: 90%;
 }
 
 #why {
@@ -1014,7 +1016,7 @@
 }
 
 .complot-container div {
-  width: 33%;
+  width: 65%;
   overflow-x: visible;
 }
 

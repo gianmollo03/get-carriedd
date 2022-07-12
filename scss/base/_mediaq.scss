@@ -131,7 +131,9 @@
         "product6"
         "product7"
         "product8";
-        justify-items: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
     }
     .products div{
         width: 80%;
@@ -140,7 +142,10 @@
         text-align: start;
         width: 70%;
     }
-
+    .products{
+        position: relative;
+        top: 100px;
+    }
 
 .box-shadow-li{
     transition: box-shadow 300ms ease-out;

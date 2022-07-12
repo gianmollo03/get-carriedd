@@ -4,16 +4,10 @@
 
     video{
         height: auto}
-
-
-
-    .overlay-background-mobile{
-        display: none;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        z-index: -1;
-    }
+    background-image: url("../../media/images/background-league.jpeg");
+    background-color: rgb(50, 50,50);
+    background-position: center;
+    background-blend-mode: soft-light;
 }
 .overlay{
     display: flex;
@@ -21,6 +15,7 @@
     flex-direction: column;
     justify-content: flex-start;
     padding-bottom: 100px;
+    padding-top:75px;
 }
 .text-container h1{
     display: flex;
@@ -111,7 +106,7 @@
     width: 100%;
     flex-direction: column;
     padding-top: 20px;
-    margin-bottom: 50px;
+    
     h2{
         overflow-x: visible;
         color: white;

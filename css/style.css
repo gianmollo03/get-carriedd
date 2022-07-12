@@ -854,15 +854,14 @@
     font-size: 0.7rem;
   }
 }
+.overlay-container {
+  background-image: url("../../media/images/background-league.jpeg");
+  background-color: rgb(50, 50, 50);
+  background-position: center;
+  background-blend-mode: soft-light;
+}
 .overlay-container video {
   height: auto;
-}
-.overlay-container .overlay-background-mobile {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
 }
 
 .overlay {
@@ -871,6 +870,7 @@
   flex-direction: column;
   justify-content: flex-start;
   padding-bottom: 100px;
+  padding-top: 75px;
 }
 
 .text-container h1 {
@@ -968,7 +968,6 @@
   width: 100%;
   flex-direction: column;
   padding-top: 20px;
-  margin-bottom: 50px;
 }
 .title-why h2 {
   overflow-x: visible;
@@ -1285,10 +1284,6 @@
     font-size: 0.7rem;
   }
 }
-.dropdown-style {
-  background-image: linear-gradient(#408ec6, #7a2048);
-}
-
 .btn-outline-success {
   color: #408ec6;
   border-color: #408ec6;

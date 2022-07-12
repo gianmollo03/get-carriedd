@@ -1562,6 +1562,11 @@
   flex-wrap: wrap;
   color: white;
   margin-right: 20px;
+  justify-content: space-evenly;
+}
+.email p {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .icons-container {

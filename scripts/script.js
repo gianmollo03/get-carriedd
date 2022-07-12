@@ -16,5 +16,4 @@ formulario.addEventListener("submit",(eventoFormulario) =>{
     console.log(` ${inputNombre.value} - ${inputApellido.value} - ${inputEmail.value} - ${inputCajaTexto.value}`)
     formulario.style = "visibility:hidden"
     respuestaFormulario.style = "visibility:visible"
-
 })  

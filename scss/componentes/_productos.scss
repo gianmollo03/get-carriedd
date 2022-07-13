@@ -138,7 +138,7 @@
 }
 
 button, button::after {
-  width: 380px;
+  width: auto;
   height: 86px;
   font-size: 36px;
   font-family: 'Bebas Neue', cursive;
@@ -160,7 +160,7 @@ button::after {
   --slice-4: inset(40% -6px 43% 0);
   --slice-5: inset(80% -6px 5% 0);
   
-  content: 'AVAILABLE NOW';
+  content: 'Comprar ahora';
   display: block;
   position: absolute;
   top: 0;

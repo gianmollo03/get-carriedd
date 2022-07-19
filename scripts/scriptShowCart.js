@@ -12,6 +12,7 @@ iconoCarrito.addEventListener("click",mostrarCarrito=>{
     let contadorItemCarrito = 0
 
     //Generar items del carrito
+    
     for (const item of carritoActual){
 
         //Creacion elemento li
@@ -20,7 +21,7 @@ iconoCarrito.addEventListener("click",mostrarCarrito=>{
 
         //Creacion del innerHTML del li
 
-        
+
         itemCarrito.innerHTML = `
         <div class="imagenItemCarritoContenedor">
             <img src="${item.imagen}" class="imagenItemCarrito" alt="${item.nombre}">
@@ -28,7 +29,7 @@ iconoCarrito.addEventListener("click",mostrarCarrito=>{
         <div class="contenedorDescripcionItemCarrito">
         <p class ="itemNombre"><strong>${item.nombre}</strong></p>
         <p class ="itemPrecio">$${item.precio}</p>
-        <p class ="itemCantidad">NaND</p>
+        <p class ="itemCantidad">Cantidad: ${item.cantidad}</p>
         </div>`
 
         //Aumento el contador para proveer una nueva ID al proximo Item
@@ -53,3 +54,6 @@ iconoCarrito.addEventListener("click",mostrarCarrito=>{
     contenedorCarrito.append(botonContinuarCompra)
 
 })
+
+
+//Boton cerrar carrito

@@ -4,8 +4,6 @@ const mousesArray = []
 const combosArray = []
 
 
-//Local Storage Definido en 0 Carrito
-
 class Teclado {
     constructor(id,nombre,precio,stock,urlImagen){
         this.id = id
@@ -33,7 +31,7 @@ class Combo {
         this.imagen = urlImagen
     }
 }
-let carritoActual = []
+
 // PUSH DE OBJETOS
 tecladosArray.push(new Teclado(1,"SHIVA WHITE K512W",7000,5,"../media/images/SHIVA_WHITE_K512W.jpg"))
 tecladosArray.push(new Teclado(2,"LG G213 PRODIGY",7000,5,"../media/images/LG_G213_PRODIGY.jpg"))
@@ -80,7 +78,7 @@ tecladosArray.forEach((teclado) => {
                 <p class="product-price">Precio: $${teclado.precio}</p>
             </div>
             <div id ="teclado${contadorContenedoresBotonesCarrito}"class="boton-carrito">
-                <button>Comprar ahora</button>
+                <button>Comprar</button>
             </div>
         </div>
     </div>`
@@ -92,20 +90,30 @@ tecladosArray.forEach((teclado) => {
     divClassProducts.append(divContenedorProducto)
     
     //Agregar al carrito (Función de teclados)
-
     const botonCarrito = document.getElementById(`teclado${contadorContenedoresBotonesCarrito}`)
-    botonCarrito.addEventListener("click",añadirCarrito =>{
-        // carritoStoraged = localStorage.getItem("carrito")
-        // if(carritoStoraged){
-        //     carritoStoragedJSON = JSON.parse(carritoStoraged)
-        // }
-        // const indiceProductoEncontrado = carritoStoraged.findIndex((tecladoCarrito)=>{
-        //     return tecladoCarrito.id === teclado.id
-        // })
 
-        carritoActual.push(teclado)
+
+    
+    botonCarrito.addEventListener("click",añadirCarrito =>{
+        let carritoActual = []
+        const carritoStoraged = localStorage.getItem("carrito")
+        console.log(JSON.parse(carritoStoraged))
+        if(carritoStoraged){
+            carritoActual = JSON.parse(carritoStoraged)
+            console.log(carritoActual)
+        }
+        const indiceProductoEncontrado = carritoActual.findIndex((tecladoCarrito) =>{
+            return tecladoCarrito.nombre === teclado.nombre
+        }
+        )
+        if(indiceProductoEncontrado === -1){
+            teclado.cantidad = 1
+            carritoActual.push(teclado)
+        }
+        else{
+            carritoActual[indiceProductoEncontrado].cantidad += 1 
+        }
         console.log(carritoActual)
-        carritoActualJSON = JSON.stringify(carritoActual)
         localStorage.setItem("carrito",JSON.stringify(carritoActual))
 
         
@@ -137,25 +145,32 @@ mousesArray.forEach((mouse) => {
                 <p class="product-price">Precio: $${mouse.precio}</p>
             </div>
             <div id="mouse${contadorContenedoresBotonesCarrito}" class="boton-carrito">
-            <button>Comprar ahora</button>
+            <button>Comprar</button>
             </div>
         </div>
     </div>`
     divContenedorProducto.append(divContenedorAtributos)
     divClassProducts.append(divContenedorProducto)
+
     const botonCarrito = document.getElementById(`mouse${contadorContenedoresBotonesCarrito}`)
     botonCarrito.addEventListener("click",añadirCarrito =>{
-        // carritoStoraged = localStorage.getItem("carrito")
-        // if(carritoStoraged){
-        //     carritoStoragedJSON = JSON.parse(carritoStoraged)
-        // }
-        // const indiceProductoEncontrado = carritoStoraged.findIndex((tecladoCarrito)=>{
-        //     return tecladoCarrito.id === teclado.id
-        // })
-
-        carritoActual.push(mouse)
+        carritoActual = []
+        carritoStoraged = localStorage.getItem("carrito")
+        if(carritoStoraged){
+            carritoActual = JSON.parse(carritoStoraged)
+        }
+        const indiceProductoEncontrado = carritoActual.findIndex((mouseCarrito)=>{
+            return mouseCarrito.nombre === mouse.nombre
+        }
+        )
+        if(indiceProductoEncontrado === -1){
+            mouse.cantidad = 1
+            carritoActual.push(mouse)
+        }
+        else{
+            carritoActual[indiceProductoEncontrado].cantidad += 1 
+        }
         console.log(carritoActual)
-        carritoActualJSON = JSON.stringify(carritoActual)
         localStorage.setItem("carrito",JSON.stringify(carritoActual))
 
         
@@ -164,6 +179,7 @@ mousesArray.forEach((mouse) => {
 
 
         )
+        
     contadorContenedoresBotonesCarrito++
 
 
@@ -190,33 +206,38 @@ combosArray.forEach((combo) => {
                 <p class="product-price">Precio: $${combo.precio}</p>
             </div>
             <div id="combo${contadorContenedoresBotonesCarrito}" class="boton-carrito">
-            <button>Comprar ahora</button>
+            <button>Comprar</button>
             </div>
         </div>
     </div>`
     divContenedorProducto.append(divContenedorAtributos)
     divClassProducts.append(divContenedorProducto)
+
     const botonCarrito = document.getElementById(`combo${contadorContenedoresBotonesCarrito}`)
     botonCarrito.addEventListener("click",añadirCarrito =>{
-        // carritoStoraged = localStorage.getItem("carrito")
-        // if(carritoStoraged){
-        //     carritoStoragedJSON = JSON.parse(carritoStoraged)
-        // }
-        // const indiceProductoEncontrado = carritoStoraged.findIndex((tecladoCarrito)=>{
-        //     return tecladoCarrito.id === teclado.id
-        // })
-
-        carritoActual.push(combo)
+        carritoActual = []
+        carritoStoraged = localStorage.getItem("carrito")
+        if(carritoStoraged){
+            carritoActual = JSON.parse(carritoStoraged)
+        }
+        const indiceProductoEncontrado = carritoActual.findIndex((comboCarrito)=>{
+            return comboCarrito.nombre === combo.nombre
+        }
+        )
+        if(indiceProductoEncontrado === -1){
+            combo.cantidad = 1
+            carritoActual.push(combo)
+        }
+        else{
+            carritoActual[indiceProductoEncontrado].cantidad += 1 
+        }
         console.log(carritoActual)
-        carritoActualJSON = JSON.stringify(carritoActual)
         localStorage.setItem("carrito",JSON.stringify(carritoActual))
 
         
-
     }
-
-
-        )
+    )
+        //Aume
     contadorContenedoresBotonesCarrito++
 })
 

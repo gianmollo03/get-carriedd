@@ -57,3 +57,7 @@ iconoCarrito.addEventListener("click",mostrarCarrito=>{
 
 
 //Boton cerrar carrito
+const botonCerrarCarrito = document.getElementById("cerrarCarrito")
+botonCerrarCarrito.addEventListener("click",cerrarCarrito =>{
+    listaCarrito.removeChild()
+})

@@ -1,74 +1,72 @@
-//Productos
-const tecladosArray = [
-    {
-        nombre: "SHIVA WHITE K512W",
-        precio: 7000,
-        stock: 5,
-        imagen: "../media/images/SHIVA_WHITE_K512W.jpg"
-    },
-    {
-        nombre: "MARVO KG965G",
-        precio: 5000,
-        stock: 2,
-        imagen: "../media/images/MARVO_KG965G.jpg"
-    },
-    {
-        nombre: "LG G213 PRODIGY",
-        precio: 10000,
-        stock: 4,
-        imagen: "../media/images/LG_G213_PRODIGY.jpg"
-    },
-    {
-        nombre: "CORSAIR HARPOON K55",
-        precio: 9000,
-        stock: 3,
-        imagen: "../media/images/COMBO_CORSAIR_HARPOON_K55.jpg"
+//Productos array
+const tecladosArray = []
+const mousesArray = []
+const combosArray = []
+
+
+//Local Storage Definido en 0 Carrito
+
+class Teclado {
+    constructor(id,nombre,precio,stock,urlImagen){
+        this.id = id
+        this.nombre = nombre
+        this.precio = parseInt(precio)
+        this.stock = parseInt(stock)
+        this.imagen = urlImagen
     }
-]
-const mousesArray = [{
-    nombre: "REDRAGON M711 COBRA FPS",
-    precio: 5500,
-    stock:10,
-    imagen:"../media/images/REDRAGON_M711_COBRA_FPS.jpg"
-    },
-    {
-        nombre: "HYPERX PULSEFIRE SURGE",
-        precio: 6500,
-        stock: 3,
-        imagen: "../media/images/HYPERX_PULSEFIRE_SURGE.jpg"
-    },
-    {
-        nombre: "REDRAGON STORM ELITE M988",
-        precio: 8600,
-        stock: 2,
-        imagen: "../media/images/REDRAGON_STORM_ELITE_M988.jpg"
+}
+class Mouse {
+    constructor(id,nombre,precio,stock,urlImagen){
+        this.id = id
+        this.nombre = nombre
+        this.precio = parseInt(precio)
+        this.stock = parseInt(stock)
+        this.imagen = urlImagen
     }
-]
-const combosArray = [
-    {
-        nombre: "COMBO CORSAIR HARPOON K55",
-        precio: 12500,
-        stock: 2,
-        imagen: "../media/images/SHIVA_WHITE_K512W.jpg"
+}
+class Combo {
+    constructor(id,nombre,precio,stock,urlImagen){
+        this.id = id
+        this.nombre = nombre
+        this.precio = parseInt(precio)
+        this.stock = parseInt(stock)
+        this.imagen = urlImagen
     }
-]
-const microfonosArray = []
+}
+let carritoActual = []
+// PUSH DE OBJETOS
+tecladosArray.push(new Teclado(1,"SHIVA WHITE K512W",7000,5,"../media/images/SHIVA_WHITE_K512W.jpg"))
+tecladosArray.push(new Teclado(2,"LG G213 PRODIGY",7000,5,"../media/images/LG_G213_PRODIGY.jpg"))
+tecladosArray.push(new Teclado(3,"MARVO KG965G",7000,5,"../media/images/MARVO_KG965G.jpg"))
+tecladosArray.push(new Teclado(4,"CORSAIR HARPOON K55",7000,5,"../media/images/COMBO_CORSAIR_HARPOON_K55.jpg"))
+mousesArray.push(new Mouse(1,"REDRAGON M711 COBRA FPS",5500,3,"../media/images/REDRAGON_M711_COBRA_FPS.jpg"))
+mousesArray.push(new Mouse(2,"REDRAGON STORM ELITE M988",8000,3,"../media/images/REDRAGON_STORM_ELITE_M988.jpg"))
+mousesArray.push(new Mouse(3,"REDRAGON M711 COBRA FPS",5500,3,"../media/images/"))
+combosArray.push(new Combo(1,"COMBO CORSAIR HARPOON K55",13000,2,"../media/images/SHIVA_WHITE_K512W.jpg"))
 
+//ID que le voy a proveer a los Teclados
 
+ let contadorContenedoresBotonesCarrito = 0
 
-//Creacion de HTML para cada objeto
-
-
-//Objetos Teclados
-
+//Adquiero el elemento product_list
 
 const divClassProducts = document.getElementById("products_list")
-console.log(divClassProducts)
+
+//Creo el HTML para cada teclado
 tecladosArray.forEach((teclado) => {
+    //Creo el contenedor del producto
     const divContenedorProducto = document.createElement("div")
+    //Asigno clase al producto
     divContenedorProducto.className = "product-item teclados"
+
+    //Creo el contenedor de la descripcion del producto
+
     const divContenedorAtributos = document.createElement("div")
+    //Asigno clase al contenedor
     divContenedorAtributos.className = "product-desc";
+
+    //Creo el html para la descripcion del producto
+
     divContenedorAtributos.innerHTML = `
      <div class="image-product">
         <img src="${teclado.imagen}" alt="" width="80px" height="80px" style="background-color:white;">
@@ -81,19 +79,46 @@ tecladosArray.forEach((teclado) => {
             <div>
                 <p class="product-price">Precio: $${teclado.precio}</p>
             </div>
-            <div class="boton-carrito">
+            <div id ="teclado${contadorContenedoresBotonesCarrito}"class="boton-carrito">
                 <button>Comprar ahora</button>
             </div>
         </div>
     </div>`
+  
+    // localStorage.clear()
+    //Append de la descripcion del producto al contenedor del item
     divContenedorProducto.append(divContenedorAtributos)
+    //Append del contenedor  del item al DIV de productos general
     divClassProducts.append(divContenedorProducto)
+    
+    //Agregar al carrito (Función de teclados)
+
+    const botonCarrito = document.getElementById(`teclado${contadorContenedoresBotonesCarrito}`)
+    botonCarrito.addEventListener("click",añadirCarrito =>{
+        // carritoStoraged = localStorage.getItem("carrito")
+        // if(carritoStoraged){
+        //     carritoStoragedJSON = JSON.parse(carritoStoraged)
+        // }
+        // const indiceProductoEncontrado = carritoStoraged.findIndex((tecladoCarrito)=>{
+        //     return tecladoCarrito.id === teclado.id
+        // })
+
+        carritoActual.push(teclado)
+        console.log(carritoActual)
+        carritoActualJSON = JSON.stringify(carritoActual)
+        localStorage.setItem("carrito",JSON.stringify(carritoActual))
+
+        
+
+    }
+
+
+        )
+        //Aumento el contador para proveer de un nuevo ID al item
+    contadorContenedoresBotonesCarrito++
 })
 
-
-//Objetos tipo Mouse
-
-
+//Creo el HTML PARA LOS MOUSE
 mousesArray.forEach((mouse) => {
     const divContenedorProducto = document.createElement("div")
     divContenedorProducto.className = "product-item mouses"
@@ -111,20 +136,42 @@ mousesArray.forEach((mouse) => {
             <div>
                 <p class="product-price">Precio: $${mouse.precio}</p>
             </div>
-            <div class="boton-carrito">
-                <button>Comprar ahora</button>
+            <div id="mouse${contadorContenedoresBotonesCarrito}" class="boton-carrito">
+            <button>Comprar ahora</button>
             </div>
         </div>
     </div>`
     divContenedorProducto.append(divContenedorAtributos)
     divClassProducts.append(divContenedorProducto)
-    
+    const botonCarrito = document.getElementById(`mouse${contadorContenedoresBotonesCarrito}`)
+    botonCarrito.addEventListener("click",añadirCarrito =>{
+        // carritoStoraged = localStorage.getItem("carrito")
+        // if(carritoStoraged){
+        //     carritoStoragedJSON = JSON.parse(carritoStoraged)
+        // }
+        // const indiceProductoEncontrado = carritoStoraged.findIndex((tecladoCarrito)=>{
+        //     return tecladoCarrito.id === teclado.id
+        // })
+
+        carritoActual.push(mouse)
+        console.log(carritoActual)
+        carritoActualJSON = JSON.stringify(carritoActual)
+        localStorage.setItem("carrito",JSON.stringify(carritoActual))
+
+        
+
+    }
+
+
+        )
+    contadorContenedoresBotonesCarrito++
+
 
 })
 
 //Objetos en combo
 
-
+//CREO EL HTML PARA LOS COMBOS
 combosArray.forEach((combo) => {
     const divContenedorProducto = document.createElement("div")
     divContenedorProducto.className = "product-item combos"
@@ -142,18 +189,35 @@ combosArray.forEach((combo) => {
             <div>
                 <p class="product-price">Precio: $${combo.precio}</p>
             </div>
-            <div class="boton-carrito">
-                <button>Comprar ahora</button>
+            <div id="combo${contadorContenedoresBotonesCarrito}" class="boton-carrito">
+            <button>Comprar ahora</button>
             </div>
         </div>
     </div>`
     divContenedorProducto.append(divContenedorAtributos)
     divClassProducts.append(divContenedorProducto)
-    
+    const botonCarrito = document.getElementById(`combo${contadorContenedoresBotonesCarrito}`)
+    botonCarrito.addEventListener("click",añadirCarrito =>{
+        // carritoStoraged = localStorage.getItem("carrito")
+        // if(carritoStoraged){
+        //     carritoStoragedJSON = JSON.parse(carritoStoraged)
+        // }
+        // const indiceProductoEncontrado = carritoStoraged.findIndex((tecladoCarrito)=>{
+        //     return tecladoCarrito.id === teclado.id
+        // })
 
+        carritoActual.push(combo)
+        console.log(carritoActual)
+        carritoActualJSON = JSON.stringify(carritoActual)
+        localStorage.setItem("carrito",JSON.stringify(carritoActual))
+
+        
+
+    }
+
+
+        )
+    contadorContenedoresBotonesCarrito++
 })
-
-
-
 
 

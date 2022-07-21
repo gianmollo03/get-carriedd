@@ -2255,4 +2255,256 @@ body {
   font-style: italic;
 }
 
+@media only screen and (max-width: 758px) {
+  /*Mobile*/
+  .us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .us-container .complot {
+    width: 75%;
+  }
+  .us-container .complot p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+  }
+  .us-container .map iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .why-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .why-container .why-explain {
+    color: white;
+    text-align: justify;
+    width: 75%;
+  }
+  .why-container .complot-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .why-container .complot-why img {
+    width: 70%;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .faq-container {
+    grid-template-areas: "title " "faq1 " "faq1   " "faq2   " "faq2   " "faq3   " "faq3   " "faq4   " "faq4   ";
+  }
+
+  .faq-container div {
+    padding: 20px 0;
+    justify-content: center;
+  }
+
+  .faq1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .question1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .faq2 div {
+    width: 100%;
+  }
+
+  .titleQ2 {
+    height: auto;
+  }
+
+  .question2 {
+    margin: 10px 0;
+  }
+
+  .faq3 div {
+    width: 100%;
+  }
+
+  .faq3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq4 div {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .complot-why {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    transition: transform 300ms ease-out, box-shadow 300ms ease-out;
+  }
+
+  .complot-why:hover {
+    transform: translate(0px, 0px) scale(1, 1);
+    box-shadow: 0px 0px 30px 0px rgb(0, 0, 0);
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 930px) {
+  .complot-why p {
+    font-size: 1em;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 520px) {
+  .footer-container div {
+    width: auto;
+  }
+
+  .text-container h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-container p {
+    width: auto;
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+
+  .primero {
+    padding-left: 0;
+  }
+
+  .header-navbar {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+  }
+
+  .links-container {
+    font-size: 0.9rem;
+    border: solid white 2px;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 540px) {
+  .relleno {
+    padding: 50px 0;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 885px) {
+  .complot-why p {
+    font-size: 0.8em;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 500px) {
+  .image-product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-product h4 {
+    font-size: 0.9rem;
+  }
+
+  .products-background-gradient {
+    overflow-x: hidden;
+  }
+}
+@media only screen and (max-width: 1150px) and (max-width: 640px) {
+  .overlay-container video {
+    display: none;
+  }
+  .overlay-container .overlay-background-mobile {
+    display: block;
+    object-fit: cover;
+  }
+
+  .complot-why h3 {
+    font-size: 20px;
+  }
+
+  .images-footer {
+    width: 50px;
+    height: 50px;
+  }
+
+  .email p {
+    font-size: 0.7rem;
+  }
+}
+body {
+  background-image: linear-gradient(#1e2761, #7a2048);
+  background-repeat: round;
+  grid-template-areas: "header header" "carrito carrito" "footer footer";
+}
+body header {
+  grid-area: header;
+}
+body #carrito {
+  grid-area: carrito;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body #carrito #listaCarrito {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+body #carrito #listaCarrito li {
+  background-color: rgba(255, 255, 255, 0.1);
+  opacity: 0, 8;
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+body #carrito #listaCarrito li .imagenItemCarritoContenedor {
+  width: 25%;
+}
+body #carrito #listaCarrito li .contenedorDescripcionItemCarrito {
+  width: 75%;
+}
+body #carrito #listaCarrito li div {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body #carrito #listaCarrito li div p {
+  width: 33%;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2vh;
+}
+body #carrito #listaCarrito li .imagenItemCarrito {
+  width: 50%;
+  height: 50%;
+}
+body #carrito .botonComprar {
+  width: 50%;
+  padding: 1rem 0;
+  margin-bottom: 20px;
+}
+body footer {
+  grid-area: footer;
+}
+
 /*# sourceMappingURL=style.css.map */

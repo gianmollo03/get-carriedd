@@ -1,16 +1,14 @@
 //Mostrar carrito 
 const iconoCarrito = document.getElementById("iconoCarrito")
-const contenedorCarrito = document.getElementById("contenedorCarrito")
+const contenedorCarrito = document.getElementById("carrito")
 const listaCarrito = document.getElementById("listaCarrito")
-iconoCarrito.addEventListener("click",mostrarCarrito=>{
-    contenedorCarrito.style = "display:flex; visibility:visible "
     //obtener carrito
-    const carritoActualJSON = localStorage.getItem("carrito")
-    const carritoActual = JSON.parse(carritoActualJSON)
+const carritoActualJSON = localStorage.getItem("carrito")
+const carritoActual = JSON.parse(carritoActualJSON)
 
     //Contador para generar las ID de los item
     let contadorItemCarrito = 0
-
+    let totalCompra = 0
     //Generar items del carrito
     
     for (const item of carritoActual){
@@ -28,7 +26,7 @@ iconoCarrito.addEventListener("click",mostrarCarrito=>{
         </div>
         <div class="contenedorDescripcionItemCarrito">
         <p class ="itemNombre"><strong>${item.nombre}</strong></p>
-        <p class ="itemPrecio">$${item.precio}</p>
+        <p class ="itemPrecio">Precio: $${item.precio}</p>
         <p class ="itemCantidad">Cantidad: ${item.cantidad}</p>
         </div>`
 
@@ -39,6 +37,10 @@ iconoCarrito.addEventListener("click",mostrarCarrito=>{
         //Añado el item a la lista
 
         listaCarrito.append(itemCarrito) 
+
+        //Aumento el total de la compra 
+        totalCompra = totalCompra + item.precio
+
     }
 
     //Boton de continuar compra
@@ -47,17 +49,14 @@ iconoCarrito.addEventListener("click",mostrarCarrito=>{
     botonContinuarCompra.className = "botonComprar"
     botonContinuarCompra.innerText  ="Continuar"
 
-
+//Creacion y append del total al contenedor
+    const totalDeLaCompra = document.createElement("li")
+    totalDeLaCompra.innerHTML= `<p><strong>El total a pagar es de $${totalCompra}</strong></p>`
+    listaCarrito.append(totalDeLaCompra)
     //Append de la lista al contenedor 
     contenedorCarrito.append(listaCarrito)
+    
     //Append del boton de continuar al contenedor
     contenedorCarrito.append(botonContinuarCompra)
 
-})
-
-
-//Boton cerrar carrito
-const botonCerrarCarrito = document.getElementById("cerrarCarrito")
-botonCerrarCarrito.addEventListener("click",cerrarCarrito =>{
-    listaCarrito.removeChild()
-})
+    

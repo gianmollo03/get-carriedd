@@ -1,109 +1,43 @@
 @import "../base/variables";
 @import "../base/mediaq";
-#Soporte {
-    display: grid;
-    grid-template-areas: "relleno1"
-    "formulario"
-    "relleno2";
+#Soporte{
+    display: flex;
     justify-content: center;
-    padding-bottom: 745px;
-    background-image: url(../media/images/Gaming-PC-Wallpaper-HD.jpg);
-    background-size: cover;
-    .mensajeDeExito{
-        background-color: #c17e8b;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        font-size: 1.4rem;
-    }
-    .formularioYaEnviado{
-        color:white;
-        .mensajeDeAdvertencia{
+    background-image: url(../../media/images/Gaming-PC-Wallpaper-HD.jpg);
+    background-repeat: no-repeat;
+    #formulario{
+        display: flex;
+        background-color: rgb(255, 255, 255,0.1);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin: 10.5% 0;
+        h1{
             text-align: center;
-            font-size: 1.2rem;
-            background-color: #c17e8b;
-            padding: 25px 0;
-            width:max-content;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: white;
         }
-
+        p{
+            text-align: center;
+            color: white;
         }
-}
-.form{
-    grid-area: formulario;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid transparent;  
-    color: white;
-    font-size: 30px;
-    background-color: rgba(77, 77, 77, 0.3);
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    .formSent{
-        display: none;
-        text-align: center;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        #elementosFormulario{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 100%;
+            .label-input{
+                display: flex;
+                flex-direction: column;
+                padding: 0 4rem;
+                label{
+                    color: white;
+                }
+            }
+        }
     }
-}
-
-.form-space-around {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100%;
-    width: 100%;
-    align-items: center;
-}
-.label-input {
-    display: flex;
-    flex-direction: column;
-    border: none;
-    width: 80%;
-    align-items: stretch;
-    input{
-        background: none;
-        border-bottom: #c17e8b solid 1px;
+    #submit{
+        margin:10px 0;
     }
-    
-}
-.inputText{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    height: 30px;
-    font-size: 20px;
-    border-radius: 3px;
-    border: none;
-    color: white;
-    
-}
-
-.textbox{
-    font-size: 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin-left: 5px;
-    border-radius: 3px;
-    resize: none;
-}
-#submit {
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 5px;
-    padding: 0 70px;
-    background-color: #c17e8b;
-    border: none;
-    width: max-content;
-    cursor: pointer;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-
-#submit:hover{
- transition: all 1s;
- background-color: #d26966;  
-}
-.exito-container{
-    background: #fff;
-    padding: 80px 20px;
-    border-radius: 5px;
-    opacity: 0.5;
-}
-.exito{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 40px;
-    font-style: italic;
 }

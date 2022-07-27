@@ -294,6 +294,15 @@ categoriaTeclados.addEventListener("click",mostrarTeclados=>{
             itemCombo.style="display:flex"
         }
         })
-         
-     
+         //Publicidad de combos
+        setTimeout(() => {
+            Swal.fire({
+                title: '¡Oferta imperdible!',
+                text: 'Combos a 15% de descuento',
+                imageUrl: '../media/images/COMBO_CORSAIR_HARPOON_K55.jpg',
+                imageWidth: 400,
+                imageHeight: 200,
+                imageAlt: 'Custom image',
+              })            
+        }, 3000);
     

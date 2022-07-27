@@ -2,7 +2,7 @@
 const tecladosArray = []
 const mousesArray = []
 const combosArray = []
-
+let totalCompra = 0
 
 class Teclado {
     constructor(id,nombre,precio,stock,urlImagen){
@@ -112,6 +112,7 @@ tecladosArray.forEach((teclado) => {
         }
         else{
             carritoActual[indiceProductoEncontrado].cantidad += 1 
+            carritoActual[indiceProductoEncontrado].precio = teclado.precio +teclado.precio
         }
         console.log(carritoActual)
         localStorage.setItem("carrito",JSON.stringify(carritoActual))
@@ -168,7 +169,8 @@ mousesArray.forEach((mouse) => {
             carritoActual.push(mouse)
         }
         else{
-            carritoActual[indiceProductoEncontrado].cantidad += 1 
+            carritoActual[indiceProductoEncontrado].cantidad += 1
+            carritoActual[indiceProductoEncontrado].precio = mouse.precio+mouse.precio
         }
         console.log(carritoActual)
         localStorage.setItem("carrito",JSON.stringify(carritoActual))
@@ -230,6 +232,9 @@ combosArray.forEach((combo) => {
         }
         else{
             carritoActual[indiceProductoEncontrado].cantidad += 1 
+            carritoActual[indiceProductoEncontrado].precio = combo.precio+combo.precio
+            
+
         }
         console.log(carritoActual)
         localStorage.setItem("carrito",JSON.stringify(carritoActual))

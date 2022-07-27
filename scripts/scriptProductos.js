@@ -241,4 +241,59 @@ combosArray.forEach((combo) => {
     contadorContenedoresBotonesCarrito++
 })
 
+//Aparecer categorias y desaparecerlas
+const categoriaCombo = document.getElementById("botonCombos")
+const categoriaTeclados = document.getElementById("botonTeclados")
+const categoriaMouse = document.getElementById("botonMouses")
+const listaMouses = document.querySelectorAll(".mouses")
+const listaCombos = document.querySelectorAll(".combos")
+const listaTeclados = document.querySelectorAll(".teclados")
 
+categoriaTeclados.addEventListener("click",mostrarTeclados=>{
+    console.log(listaMouses)
+    console.log(listaCombos)
+    console.log(listaTeclados)
+    for(const itemTeclado of listaTeclados){
+        itemTeclado.style="display:flex"
+    }
+    for(const itemMouse of listaMouses){
+        itemMouse.style="display:none"
+    }
+    for(const itemCombo of listaCombos){
+        itemCombo.style="display:none"
+    }
+    })
+     
+    categoriaMouse.addEventListener("click",mostrarMouse=>{
+        console.log(listaMouses)
+        console.log(listaCombos)
+        console.log(listaTeclados)
+        for(const itemTeclado of listaTeclados){
+            itemTeclado.style="display:none"
+        }
+        for(const itemMouse of listaMouses){
+            itemMouse.style="display:flex"
+        }
+        for(const itemCombo of listaCombos){
+            itemCombo.style="display:none"
+        }
+        })
+         
+          
+    categoriaCombo.addEventListener("click",mostrarCombo=>{
+        console.log(listaMouses)
+        console.log(listaCombos)
+        console.log(listaTeclados)
+        for(const itemTeclado of listaTeclados){
+            itemTeclado.style="display:none"
+        }
+        for(const itemMouse of listaMouses){
+            itemMouse.style="display:none"
+        }
+        for(const itemCombo of listaCombos){
+            itemCombo.style="display:flex"
+        }
+        })
+         
+     
+    

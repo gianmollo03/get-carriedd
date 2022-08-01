@@ -21,6 +21,9 @@
     "nodemon": "^2.0.15"
   },
   "dependencies": {
+    "bootstrap": "^5.2.0",
+    "react": "^18.2.0",
+    "sass": "^1.54.0",
     "sweetalert2": "^11.4.24"
   }
 }

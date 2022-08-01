@@ -1,0 +1,30 @@
+[
+    {
+        "id":1,
+        "nombre":"SHIVA WHITE K512W",
+        "precio":8000,
+        "stock":5,
+        "imagen":"../../media/images/SHIVA_WHITE_K512W.jpg"
+    },
+    {  
+        "id":2,
+        "nombre":"LG G213 PRODIGY",
+        "precio":9500,
+        "stock":"5",
+        "imagen":"../../media/images/LG_G213_PRODIGY.jpg"
+    },
+    {
+        "id":3,
+        "nombre":"MARVO KG965G",
+        "precio":7500,
+        "stock":3,
+        "imagen":"../../media/images/MARVO_KG965G.jpg"
+    },
+    {
+        "id":4,
+        "nombre":"CORSAIR HARPOON K55",
+        "precio":8399,
+        "stock":5,
+        "imagen":"../../media/images/COMBO_CORSAIR_HARPOON_K55.jpg"
+    }
+]

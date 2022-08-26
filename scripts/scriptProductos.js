@@ -36,7 +36,7 @@ const divClassProducts = document.getElementById("products_list")
 //     }
 // }
 async function  obtenerTeclados(){
-    const teclados = await fetch("../../scripts/JSON/teclados.json")
+    const teclados = await fetch("../scripts/JSON/teclados.json")
     const tecladosData = await teclados.json()
     tecladosArray = tecladosData
     console.log(tecladosArray)
@@ -122,7 +122,7 @@ async function  obtenerTeclados(){
     
 }
 async function  obtenerMouses(){
-    const mouses = await fetch("../../scripts/JSON/mouses.json")
+    const mouses = await fetch("../scripts/JSON/mouses.json")
     const mousesData = await mouses.json()
     mousesArray = mousesData
     console.log(mousesArray)
@@ -191,7 +191,7 @@ async function  obtenerMouses(){
     
 }
 async function  obtenerCombos(){
-    const combos = await fetch("../../scripts/JSON/combos.json")
+    const combos = await fetch("../scripts/JSON/combos.json")
     const combosData = await combos.json()
     combosArray= combosData
     console.log(combosArray)

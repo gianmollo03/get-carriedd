@@ -1,204 +1,194 @@
-@media only screen and (max-width: 758px){
-    /*Mobile*/
-    .us-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+@media only screen and (max-width: 758px) {
+  /*Mobile*/
+  .us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-            .complot{
-                width: 75%;
-                p{
-                    margin-top: 15px;
-                    font-size: 1.1rem;
-                }
-            }
-            .map {
-                iframe{
-                    width: 100%;
-                    height: 300px;
-                }
-               
-            }
-
+    .complot {
+      width: 75%;
+      p {
+        margin-top: 15px;
+        font-size: 1.1rem;
+      }
     }
-    .why-container{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        .why-explain{
-            color: white;
-            text-align: justify;
-            width: 75%;
-        }
-        .complot-container{
-            flex-direction: column;
-            align-items: center;
-        }
-        .complot-why{
-            img{
-                width: 70%;
-                height: auto;
-            }
-        }
-    }
-
-}
-
-@media only screen and (max-width:1300px){
-    .faq-container{
-        grid-template-areas: 
-        "title "
-        "faq1 "
-        "faq1   "
-        "faq2   "
-        "faq2   "
-        "faq3   "
-        "faq3   "
-        "faq4   "
-        "faq4   ";
-    }
-    .faq-container div{
-        padding: 20px 0;
-        justify-content: center;
-    }
-    .faq1{
-      
-        display: flex;
-        flex-direction: column; 
-    }
-    .question1{
-        display:flex;
-        flex-direction: column;
-    }
-
-    .faq2{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+    .map {
+      iframe {
         width: 100%;
+        height: 300px;
+      }
     }
-    .faq2 div{
-        width: 100%
-    };
-    .titleQ2{
-        height: auto;
+  }
+  .why-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .why-explain {
+      color: white;
+      text-align: justify;
+      width: 75%;
     }
-    .question2{
-        margin: 10px 0;
-    }
-    .faq3 div{
-        width: 100%
-    };
-    .faq3{
-        display: flex;
-        flex-direction: column;
-        
-    }
-    .faq4{
-        display: flex;
+    .complot-container {
       flex-direction: column;
-     
+      align-items: center;
     }
-    .faq4 div{
-        width: 100%;
-        padding: 10px 0;
+    .complot-why {
+      img {
+        width: 70%;
+        height: auto;
+      }
     }
-
+  }
 }
-@media only screen and (max-width:1150px){
-.complot-why {
+
+@media only screen and (max-width: 1300px) {
+  .faq-container {
+    grid-template-areas:
+      "title "
+      "faq1 "
+      "faq1   "
+      "faq2   "
+      "faq2   "
+      "faq3   "
+      "faq3   "
+      "faq4   "
+      "faq4   ";
+  }
+  .faq-container div {
+    padding: 20px 0;
+    justify-content: center;
+  }
+  .faq1 {
+    display: flex;
+    flex-direction: column;
+  }
+  .question1 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faq2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .faq2 div {
+    width: 100%;
+  }
+  .titleQ2 {
+    height: auto;
+  }
+  .question2 {
+    margin: 10px 0;
+  }
+  .faq3 div {
+    width: 100%;
+  }
+  .faq3 {
+    display: flex;
+    flex-direction: column;
+  }
+  .faq4 {
+    display: flex;
+    flex-direction: column;
+  }
+  .faq4 div {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+@media only screen and (max-width: 1150px) {
+  .complot-why {
     display: flex;
     flex-direction: column;
 
     margin-top: 30px;
     transition: transform 300ms ease-out, box-shadow 300ms ease-out;
-
-}
-.complot-why:hover{
+  }
+  .complot-why:hover {
     transform: translate(0px, 0px) scale(1, 1);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 1);
-}
-@media only screen and (max-width:930px){
-    .complot-why p{
-        font-size: 1em;
+  }
+  @media only screen and (max-width: 930px) {
+    .complot-why p {
+      font-size: 1em;
     }
-}
+  }
 
-@media only screen and (max-width:520px){
-
-    .footer-container{
-        div{
-            width:auto;
-        }
-    }
-    .text-container h1{
-        font-size: 1.8rem;
-    }
-    .text-container p{
+  @media only screen and (max-width: 520px) {
+    .footer-container {
+      div {
         width: auto;
-        font-size: 1rem;
-        margin-bottom: 20px;
+      }
     }
-        
-.primero{
-    padding-left: 0;
-}
-.header-navbar{
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-content: center;
-}
-.links-container{
-    font-size: 0.9rem;
-    border: solid white 2px;
-}
-}
+    .text-container h1 {
+      font-size: 1.8rem;
+    }
+    .text-container p {
+      width: auto;
+      font-size: 1rem;
+      margin-bottom: 20px;
+    }
 
-@media only screen and (max-width: 540px){
-    .relleno{
-        padding: 50px 0;
+    .primero {
+      padding-left: 0;
     }
-}
-@media only screen and  (max-width:885px){
-    .complot-why p{
-        font-size: 0.8em;
+    .header-navbar {
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      align-content: center;
     }
-}
-@media only screen and (max-width:500px){
-        .image-product{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .image-product h4{
-            font-size: 0.9rem;
-        }
-        .products-background-gradient{
-            overflow-x: hidden;
+    .links-container {
+      font-size: 0.9rem;
+      border: solid white 2px;
+    }
+  }
 
-        }
-}
-@media only screen and (max-width:640px){
-    .overlay-container{
-        video{
-            display: none;
-        }
-        .overlay-background-mobile{
-            display: block;
-            object-fit: cover;
-        }
+  @media only screen and (max-width: 540px) {
+    .relleno {
+      padding: 50px 0;
     }
-    .complot-why h3{
-        font-size: 20px;
+  }
+  @media only screen and (max-width: 885px) {
+    .complot-why p {
+      font-size: 0.8em;
     }
-    .images-footer{
-        width: 50px;
-        height: 50px;
+  }
+  @media only screen and (max-width: 500px) {
+    .image-product {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-    .email{
-        p{
-            font-size: 0.7rem;
-        }
+    .image-product h4 {
+      font-size: 0.9rem;
     }
-}
+    .products-background-gradient {
+      overflow-x: hidden;
+    }
+  }
+  @media only screen and (max-width: 640px) {
+    .overlay-container {
+      video {
+        display: none;
+      }
+      .overlay-background-mobile {
+        display: block;
+        object-fit: cover;
+      }
+    }
+    .complot-why h3 {
+      font-size: 20px;
+    }
+    .images-footer {
+      width: 50px;
+      height: 50px;
+    }
+    .email {
+      p {
+        font-size: 0.7rem;
+      }
+    }
+  }
 }

@@ -1,14 +1,13 @@
 @import "../base/variables";
 @import "../base/mediaq";
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
-.products-background-gradient{
-    background-image: linear-gradient(to right, #7a2048,#1e2761);
-
+.products-background-gradient {
+  background-image: linear-gradient(to right, #7a2048, #1e2761);
 }
 
-#contenedorCarrito{
+#contenedorCarrito {
   grid-area: carrito;
   display: none;
   visibility: hidden;
@@ -18,251 +17,260 @@
   align-items: center;
   margin-bottom: 20px;
   margin-top: 20;
-  .botonComprar{
+  .botonComprar {
     width: 30%;
     margin-bottom: 20px;
     margin-right: 20px;
     align-self: flex-end;
   }
-  #listaCarrito{
+  #listaCarrito {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    li{
+    li {
       width: 50%;
       display: flex;
       flex-direction: row;
-      justify-content:  space-evenly;
+      justify-content: space-evenly;
       align-items: center;
-        div{
-          width: 50%;
-        }
-      img{
+      div {
+        width: 50%;
+      }
+      img {
         width: 50%;
       }
     }
   }
 }
 
-#products-overlay{
+#products-overlay {
+  display: flex;
+  justify-content: flex-start;
+  background-color: black;
+  color: white;
+  h1 {
+    width: 100%;
     display: flex;
-    justify-content: flex-start;
-    background-color: black;
-    color: white;
-    h1{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+    justify-content: center;
+  }
 }
 
-
 #products {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 // .products{
 //     width: 50%;
 // }
 
-.categorys{
+.categorys {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .category-title {
+    width: 100%;
+    text-align: center;
+    h2 {
+      background-color: white;
+      padding: 20px 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+      margin: 0;
+    }
+  }
+  .types {
+    width: 100%;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .category-title{
-        width: 100%;
-        text-align: center;
-        h2{
-            background-color: white;
-            padding: 20px 0;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 0;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: black;
+      width: auto;
+      border-left: solid 1px white;
+      border-right: solid 1px white;
+      h3 {
+        button {
+          background-color: transparent;
+          color: white;
+          font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+            Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+            sans-serif;
+          padding: 10px 0;
         }
+      }
     }
-    .types{
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-        div{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: black;
-            width: auto;
-            border-left: solid 1px white;
-            border-right: solid 1px white;
-            h3{
-                button{
-                    background-color: transparent;
-                    color: white;
-                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-                    padding: 10px 0;
-                }
-            }
-        }
-    }
+  }
 }
-#products_list{
+#products_list {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-    div{
-        width: 50%;
-    }
-    .product-item{
-       
+  div {
+    width: 50%;
+  }
+  .product-item {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 10px 0;
+    flex-wrap: wrap;
+    .product-desc {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      .image-product {
+        margin: 0 20px;
+        img {
+          width: 75%;
+          height: auto;
+          padding: 0;
+          margin: 0;
+        }
+      }
+      .producto-nombre-precio {
         display: flex;
-        width: 50%;
         flex-direction: column;
-        padding: 10px 0;
-        flex-wrap: wrap;
-        .product-desc{
+        align-items: flex-start;
+        div {
+          .product-name {
+            padding-left: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont,
+              "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+              "Helvetica Neue", sans-serif;
+            font-size: 1rem;
+            font-weight: bold;
+            text-decoration: underline;
+            color: white;
+          }
+        }
+        .producto-precio-carrito {
+          flex-wrap: wrap;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          div {
+            padding: 0 20px;
+            .product-price {
+              font-weight: bold;
+              font-size: 1rem;
+              text-decoration: underline 2px;
+            }
+          }
+          body {
             display: flex;
-            flex-direction: row;
-            justify-content: flex-start;
+            justify-content: center;
             align-items: center;
-            width: 100%;
-            .image-product{
-                margin: 0 20px;
-                img{
-                    width: 75%;
-                    height: auto;
-                    padding: 0;
-                    margin: 0;
-                }
+            min-height: 100vh;
+            background-color: #f8f005;
+          }
+
+          button,
+          button::after {
+            width: auto;
+            height: auto;
+            font-size: 36px;
+            font-family: "Bebas Neue", cursive;
+            background: linear-gradient(45deg, transparent 5%, #ff013c 5%);
+            border: 0;
+            color: #fff;
+            letter-spacing: 3px;
+            line-height: 88px;
+            box-shadow: 6px 0px 0px #00e6f6;
+            outline: transparent;
+            position: relative;
+          }
+
+          button::after {
+            --slice-0: inset(50% 50% 50% 50%);
+            --slice-1: inset(80% -6px 0 0);
+            --slice-2: inset(50% -6px 30% 0);
+            --slice-3: inset(10% -6px 85% 0);
+            --slice-4: inset(40% -6px 43% 0);
+            --slice-5: inset(80% -6px 5% 0);
+
+            content: "Comprar";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+              45deg,
+              transparent 3%,
+              #00e6f6 3%,
+              #00e6f6 5%,
+              #ff013c 5%
+            );
+            text-shadow: -3px -3px 0px #f8f005, 3px 3px 0px #00e6f6;
+            clip-path: var(--slice-0);
+          }
+
+          button:hover::after {
+            animation: 1s glitch;
+            animation-timing-function: steps(2, end);
+          }
+
+          @keyframes glitch {
+            0% {
+              clip-path: var(--slice-1);
+              transform: translate(-20px, -10px);
             }
-            .producto-nombre-precio{
-                display: flex;
-                flex-direction: column;
-                align-items: flex-start;
-                div{
-                    .product-name{
-                        padding-left: 20px  ;
-                        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 
-                        'Helvetica Neue', sans-serif;
-                        font-size: 1rem;
-                        font-weight: bold;
-                        text-decoration: underline;
-                        color: white;
-                    }
-                }
-                .producto-precio-carrito{
-                    flex-wrap: wrap;
-                    width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: flex-start;
-                    div{
-                        padding: 0 20px;
-                        .product-price{
-                            font-weight: bold;
-                            font-size: 1rem;
-                            text-decoration: underline 2px;
-                        }
-
-                    }
-                    body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #F8F005;
-}
-
-button, button::after {
-  width: auto;
-  height: auto;
-  font-size: 36px;
-  font-family: 'Bebas Neue', cursive;
-  background: linear-gradient(45deg, transparent 5%, #FF013C 5%);
-  border: 0;
-  color: #fff;
-  letter-spacing: 3px;
-  line-height: 88px;
-  box-shadow: 6px 0px 0px #00E6F6;
-  outline: transparent;
-  position: relative;
-}
-
-button::after {
-  --slice-0: inset(50% 50% 50% 50%);
-  --slice-1: inset(80% -6px 0 0);
-  --slice-2: inset(50% -6px 30% 0);
-  --slice-3: inset(10% -6px 85% 0);
-  --slice-4: inset(40% -6px 43% 0);
-  --slice-5: inset(80% -6px 5% 0);
-  
-  content: 'Comprar';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, transparent 3%, #00E6F6 3%, #00E6F6 5%, #FF013C 5%);
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
-  clip-path: var(--slice-0);
-}
-
-button:hover::after {
-  animation: 1s glitch;
-  animation-timing-function: steps(2, end);
-}
-
-@keyframes glitch {
-  0% {
-    clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
-  }
-  10% {
-    clip-path: var(--slice-3);
-    transform: translate(10px, 10px);
-  }
-  20% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 10px);
-  }
-  30% {
-    clip-path: var(--slice-3);
-    transform: translate(0px, 5px);
-  }
-  40% {
-    clip-path: var(--slice-2);
-    transform: translate(-5px, 0px);
-  }
-  50% {
-    clip-path: var(--slice-3);
-    transform: translate(5px, 0px);
-  }
-  60% {
-    clip-path: var(--slice-4);
-    transform: translate(5px, 10px);
-  }
-  70% {
-    clip-path: var(--slice-2);
-    transform: translate(-10px, 10px);
-  }
-  80% {
-    clip-path: var(--slice-5);
-    transform: translate(20px, -10px);
-  }
-  90% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 0px);
-  }
-  100% {
-    clip-path: var(--slice-1);
-    transform: translate(0);
-  }
-}
-                }
+            10% {
+              clip-path: var(--slice-3);
+              transform: translate(10px, 10px);
             }
+            20% {
+              clip-path: var(--slice-1);
+              transform: translate(-10px, 10px);
             }
+            30% {
+              clip-path: var(--slice-3);
+              transform: translate(0px, 5px);
+            }
+            40% {
+              clip-path: var(--slice-2);
+              transform: translate(-5px, 0px);
+            }
+            50% {
+              clip-path: var(--slice-3);
+              transform: translate(5px, 0px);
+            }
+            60% {
+              clip-path: var(--slice-4);
+              transform: translate(5px, 10px);
+            }
+            70% {
+              clip-path: var(--slice-2);
+              transform: translate(-10px, 10px);
+            }
+            80% {
+              clip-path: var(--slice-5);
+              transform: translate(20px, -10px);
+            }
+            90% {
+              clip-path: var(--slice-1);
+              transform: translate(-10px, 0px);
+            }
+            100% {
+              clip-path: var(--slice-1);
+              transform: translate(0);
+            }
+          }
+        }
+      }
     }
+  }
 }
-// 
+//

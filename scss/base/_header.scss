@@ -1,29 +1,28 @@
 @import "variables";
 @import "mediaq";
-@mixin flexbox ($display,$justify-c){
-    display: $display;
-    justify-content: $justify-c ;
+@mixin flexbox($display, $justify-c) {
+  display: $display;
+  justify-content: $justify-c;
 }
 
-.btn-outline-success{
-    color:#408ec6 ;
-    border-color: #408ec6;
+.btn-outline-success {
+  color: #408ec6;
+  border-color: #408ec6;
 }
-.btn:hover{
-    background-color: #408ec6;
-    color: white;
+.btn:hover {
+  background-color: #408ec6;
+  color: white;
 }
 .overlay-container {
-    @include flexbox(flex,center);
-    height: fit-content;
-    padding-top: 100px;
-    align-items: center;
-
+  @include flexbox(flex, center);
+  height: fit-content;
+  padding-top: 100px;
+  align-items: center;
 }
 
-#iconoCarrito{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: auto;
+#iconoCarrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
 }

@@ -1,71 +1,71 @@
 @import "../base/variables";
 @import "../base/mediaq";
 
-body{
-    background-image: linear-gradient($background-gradient-end,$background-gradient-start);
-    background-repeat:round;
-    grid-template-areas: "header header"
+body {
+  background-image: linear-gradient(
+    $background-gradient-end,
+    $background-gradient-start
+  );
+  background-repeat: round;
+  grid-template-areas:
+    "header header"
     "carrito carrito"
     "footer footer";
-    header{
-        grid-area: header;
-    }
-    #carrito{
-        grid-area: carrito;
+  header {
+    grid-area: header;
+  }
+  #carrito {
+    grid-area: carrito;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    #listaCarrito {
+      list-style-type: none;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      li {
+        background-color: rgba(255, 255, 255, 0.1);
+        opacity: 0, 8;
+        width: 95%;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-        #listaCarrito{
-            list-style-type: none;
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            li{
-                background-color: rgba(255, 255, 255, 0.1);
-                opacity: 0,8;
-                width: 95%;   
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                justify-content: flex-start;
-                flex-wrap: wrap;
-                .imagenItemCarritoContenedor{
-                    width: 25%;
-                }
-                .contenedorDescripcionItemCarrito{
-                    width: 75%;
-                }
-                div{
-                    margin: 20px 0;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
-                    
-
-                    p{
-                        width: 33%;
-                        text-align: center;
-                        font-weight: bold;
-                        font-size:2vh;
-
-                    }
-                }
-
-                .imagenItemCarrito{
-                    width: 50%;
-                    height: 50%;
-                    
-                }        
-            }
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        .imagenItemCarritoContenedor {
+          width: 25%;
         }
-        .botonComprar{
-            width: 50%;
-            padding: 1rem 0;
-            margin-bottom: 20px;
+        .contenedorDescripcionItemCarrito {
+          width: 75%;
         }
-        
+        div {
+          margin: 20px 0;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-around;
+
+          p {
+            width: 33%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 2vh;
+          }
+        }
+
+        .imagenItemCarrito {
+          width: 50%;
+          height: 50%;
+        }
+      }
     }
-    footer{
-        grid-area: footer;
+    .botonComprar {
+      width: 50%;
+      padding: 1rem 0;
+      margin-bottom: 20px;
     }
+  }
+  footer {
+    grid-area: footer;
+  }
 }

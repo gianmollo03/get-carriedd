@@ -1,24 +1,23 @@
 [
-    {   
-        "id":1,
-        "nombre":"REDRAGON M711 COBRA FPS",
-        "precio":6999,
-        "stock":8,
-        "imagen":"../media/images/REDRAGON_M711_COBRA_FPS.jpg"
-    },
-    {
-        "id":2,
-        "nombre":"REDRAGON STORM ELITE M988",
-        "precio":5999,
-        "stock":5,
-        "imagen":"../media/images/REDRAGON_STORM_ELITE_M988.jpg"
-    },
-    {
-        "id":3,
-        "nombre":"HYPERX PULSEFIRE SURGE",
-        "precio":7599,
-        "stock":5,
-        "imagen":"../media/images/HYPERX_PULSEFIRE_SURGE.jpg"
-    }
-    
+  {
+    "id": 1,
+    "nombre": "REDRAGON M711 COBRA FPS",
+    "precio": 6999,
+    "stock": 8,
+    "imagen": "../media/images/REDRAGON_M711_COBRA_FPS.jpg"
+  },
+  {
+    "id": 2,
+    "nombre": "REDRAGON STORM ELITE M988",
+    "precio": 5999,
+    "stock": 5,
+    "imagen": "../media/images/REDRAGON_STORM_ELITE_M988.jpg"
+  },
+  {
+    "id": 3,
+    "nombre": "HYPERX PULSEFIRE SURGE",
+    "precio": 7599,
+    "stock": 5,
+    "imagen": "../media/images/HYPERX_PULSEFIRE_SURGE.jpg"
+  }
 ]

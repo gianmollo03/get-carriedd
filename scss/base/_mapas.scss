@@ -1,11 +1,9 @@
-
-$background-body:(
-    margin-body-standar : 0,
-    padding-body-standar: 0,
+$background-body: (
+  margin-body-standar: 0,
+  padding-body-standar: 0,
 );
 
-body{
-    margin: map-get($background-body, margin-body-standar );
-    padding: map-get($background-body, padding-body-standar);
+body {
+  margin: map-get($background-body, margin-body-standar);
+  padding: map-get($background-body, padding-body-standar);
 }
-
